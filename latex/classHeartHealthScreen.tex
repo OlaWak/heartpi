@@ -1,0 +1,362 @@
+\hypertarget{classHeartHealthScreen}{}\doxysection{Heart\+Health\+Screen Class Reference}
+\label{classHeartHealthScreen}\index{HeartHealthScreen@{HeartHealthScreen}}
+
+
+A widget that displays heart health results and a live heart rate chart.  
+
+
+
+
+{\ttfamily \#include $<$Heart\+Health\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Heart\+Health\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classHeartHealthScreen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Heart\+Health\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classHeartHealthScreen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeartHealthScreen_a7eca2e24f6cc459e3d12e6ba60e70563}{go\+Back\+To\+Main}} ()
+\begin{DoxyCompactList}\small\item\em Slot to navigate back to the main menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeartHealthScreen_aa54adcb6bbbd032e5ca14a585d7e12fa}{show\+Results\+For\+User}} ()
+\begin{DoxyCompactList}\small\item\em Slot to display previous results for the user from CSV data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_a53ac71351157a09531b94a206e785aae}\label{classHeartHealthScreen_a53ac71351157a09531b94a206e785aae}} 
+void \mbox{\hyperlink{classHeartHealthScreen_a53ac71351157a09531b94a206e785aae}{back\+To\+Main}} ()
+\begin{DoxyCompactList}\small\item\em Signal emitted when navigating back to the main menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHeartHealthScreen_ab032e8fcf1fc501b267d45555aaa787e}{Heart\+Health\+Screen}} (QStacked\+Widget $\ast$stacked\+Widget\+Ref, const QString \&username, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeartHealthScreen_a3dfbc204ec45c6d0d69f3240f3b55644}{display\+Results}} (const \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} \&family\+Data)
+\begin{DoxyCompactList}\small\item\em Displays the heart health results after the user completes the survey. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeartHealthScreen_a10709e4d68b7f7a8f4329b11dfff08a4}{set\+User}} (const QString \&username)
+\begin{DoxyCompactList}\small\item\em Sets the current username. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeartHealthScreen_a84d96a2c53885e32ee33eb4dea0ebe9c}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets all UI elements and internal data to their initial state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeartHealthScreen_ae9a8feeb4eb1643add33662152b151cb}{paint\+Event}} (QPaint\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em Paints a custom background based on the risk level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeartHealthScreen_a878fcd3dac58e92633f22854e04de6a8}{update\+Live\+Chart}} ()
+\begin{DoxyCompactList}\small\item\em Updates the live heart rate chart. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeartHealthScreen_af4b2d3c2174a1c06932fdfc7b0675c81}{setup\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Sets up the user interface components. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeartHealthScreen_a0893376a338ee9cb5b81f3f04704ce1c}{setup\+Live\+Chart}} ()
+\begin{DoxyCompactList}\small\item\em Configures the live heart rate chart. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeartHealthScreen_a94bd1d05ec85e09b420171323d9c6be3}{generate\+Heart\+Rate\+Chart}} (double heart\+Rate)
+\begin{DoxyCompactList}\small\item\em Generates a heart rate chart (not used for live updates). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeartHealthScreen_a05f156eb6d0819ca5e85ca4b103d8127}{load\+Data\+From\+CSV}} (const QString \&filename)
+\begin{DoxyCompactList}\small\item\em Loads historical heart rate data from a CSV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_a5116b001c53dca99c5606076ed2757f0}\label{classHeartHealthScreen_a5116b001c53dca99c5606076ed2757f0}} 
+QTimer $\ast$ \mbox{\hyperlink{classHeartHealthScreen_a5116b001c53dca99c5606076ed2757f0}{m\+\_\+beep\+Timer}} = nullptr
+\begin{DoxyCompactList}\small\item\em Timer for playing audio alerts based on risk. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHeartHealthScreen_ad9e0fb23d8fbe885a31b81b690f9a903}\label{classHeartHealthScreen_ad9e0fb23d8fbe885a31b81b690f9a903}} 
+QString\+List \mbox{\hyperlink{classHeartHealthScreen_ad9e0fb23d8fbe885a31b81b690f9a903}{live\+Data\+Lines}}
+\begin{DoxyCompactList}\small\item\em Stores live heart rate data lines from CSV. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHeartHealthScreen_af70c078097800417623bffcca549002c}\label{classHeartHealthScreen_af70c078097800417623bffcca549002c}} 
+QStacked\+Widget $\ast$ \mbox{\hyperlink{classHeartHealthScreen_af70c078097800417623bffcca549002c}{stacked\+Widget}}
+\begin{DoxyCompactList}\small\item\em Pointer to the main QStacked\+Widget for screen navigation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHeartHealthScreen_a6b87c50523e96fecbc316907f366fdbe}\label{classHeartHealthScreen_a6b87c50523e96fecbc316907f366fdbe}} 
+QString \mbox{\hyperlink{classHeartHealthScreen_a6b87c50523e96fecbc316907f366fdbe}{user}}
+\begin{DoxyCompactList}\small\item\em Current user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHeartHealthScreen_aa6839df29d8265cd57640cb48dfff3ef}\label{classHeartHealthScreen_aa6839df29d8265cd57640cb48dfff3ef}} 
+QLabel $\ast$ {\bfseries result\+Label}
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_ad1cd399527255361f9a762575d0ee979}\label{classHeartHealthScreen_ad1cd399527255361f9a762575d0ee979}} 
+QLabel $\ast$ {\bfseries heart\+Rate\+Label}
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_acbd936ac6b5a8d474f61cf60a9b37f14}\label{classHeartHealthScreen_acbd936ac6b5a8d474f61cf60a9b37f14}} 
+QChart\+View $\ast$ {\bfseries chart\+View}
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_a4c63cf70cef2b31f2df0c0c330df677d}\label{classHeartHealthScreen_a4c63cf70cef2b31f2df0c0c330df677d}} 
+QLine\+Series $\ast$ {\bfseries heart\+Rate\+Series}
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_aea00c3529abe5787c463b6733cb513c7}\label{classHeartHealthScreen_aea00c3529abe5787c463b6733cb513c7}} 
+QChart $\ast$ {\bfseries chart}
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_aa657446f2fe1220504347e45a681563b}\label{classHeartHealthScreen_aa657446f2fe1220504347e45a681563b}} 
+QTimer $\ast$ {\bfseries live\+Timer}
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_a487cbea22ab70177f9636881f56665e3}\label{classHeartHealthScreen_a487cbea22ab70177f9636881f56665e3}} 
+int {\bfseries currentX} = 0
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_a0cf13081d60f4970d8191ca8c96273b7}\label{classHeartHealthScreen_a0cf13081d60f4970d8191ca8c96273b7}} 
+int {\bfseries live\+Data\+Index} = 0
+\item 
+\mbox{\Hypertarget{classHeartHealthScreen_a73e53b27acdbf7d9322e1c6197c5f559}\label{classHeartHealthScreen_a73e53b27acdbf7d9322e1c6197c5f559}} 
+QString {\bfseries m\+\_\+current\+Risk}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A widget that displays heart health results and a live heart rate chart. 
+
+The \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} class provides a user interface that displays the results of a heart health assessment, including simulated sensor readings, risk assessment messages, and a live updating heart rate chart. It also supports data logging from CSV files and can play audio alerts based on the risk level. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeartHealthScreen_ab032e8fcf1fc501b267d45555aaa787e}\label{classHeartHealthScreen_ab032e8fcf1fc501b267d45555aaa787e}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!HeartHealthScreen@{HeartHealthScreen}}
+\index{HeartHealthScreen@{HeartHealthScreen}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{HeartHealthScreen()}{HeartHealthScreen()}}
+{\footnotesize\ttfamily Heart\+Health\+Screen\+::\+Heart\+Health\+Screen (\begin{DoxyParamCaption}\item[{QStacked\+Widget $\ast$}]{stacked\+Widget\+Ref,  }\item[{const QString \&}]{username,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget used for navigating between screens. \\
+\hline
+{\em username} & The username of the current user. \\
+\hline
+{\em parent} & Pointer to the parent widget (default is nullptr).\\
+\hline
+\end{DoxyParams}
+Initializes the \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} with the provided QStacked\+Widget reference, username, and parent widget. The constructor sets widget attributes for painting and then calls \mbox{\hyperlink{classHeartHealthScreen_af4b2d3c2174a1c06932fdfc7b0675c81}{setup\+UI()}} to initialize the user interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget managing the application\textquotesingle{}s screens. \\
+\hline
+{\em username} & The username of the current user. \\
+\hline
+{\em parent} & Pointer to the parent QWidget. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeartHealthScreen_a3dfbc204ec45c6d0d69f3240f3b55644}\label{classHeartHealthScreen_a3dfbc204ec45c6d0d69f3240f3b55644}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!displayResults@{displayResults}}
+\index{displayResults@{displayResults}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{displayResults()}{displayResults()}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::display\+Results (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} \&}]{family\+Data }\end{DoxyParamCaption})}
+
+
+
+Displays the heart health results after the user completes the survey. 
+
+Displays heart health results and updates historical data.
+
+This method uses the provided \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object to assess the heart health and update the UI with simulated sensor readings and risk assessment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em family\+Data} & The \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object containing the user\textquotesingle{}s health data.\\
+\hline
+\end{DoxyParams}
+Computes the heart health assessment using family data and updates UI elements with the simulated sensor readings. Adjusts the background color and starts a beeping timer if the risk is high. Also updates the CSV file with simulated heart rate data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em family\+Data} & The \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object containing user data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeartHealthScreen_a94bd1d05ec85e09b420171323d9c6be3}\label{classHeartHealthScreen_a94bd1d05ec85e09b420171323d9c6be3}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!generateHeartRateChart@{generateHeartRateChart}}
+\index{generateHeartRateChart@{generateHeartRateChart}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{generateHeartRateChart()}{generateHeartRateChart()}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::generate\+Heart\+Rate\+Chart (\begin{DoxyParamCaption}\item[{double}]{heart\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generates a heart rate chart (not used for live updates). 
+
+(Unused) Placeholder for generating a heart rate chart.
+
+
+\begin{DoxyParams}{Parameters}
+{\em heart\+Rate} & The heart rate value (unused).\\
+\hline
+\end{DoxyParams}
+This function is currently not used for live updates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em heart\+Rate} & The heart rate value (unused). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeartHealthScreen_a7eca2e24f6cc459e3d12e6ba60e70563}\label{classHeartHealthScreen_a7eca2e24f6cc459e3d12e6ba60e70563}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!goBackToMain@{goBackToMain}}
+\index{goBackToMain@{goBackToMain}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{goBackToMain}{goBackToMain}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::go\+Back\+To\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Slot to navigate back to the main menu. 
+
+Navigates back to the main menu.
+
+This slot is triggered, for example, by a back button press to return to the main menu screen.
+
+Stops any active timers and instructs the QStacked\+Widget to switch to the main menu screen. Emits the back\+To\+Main signal. \mbox{\Hypertarget{classHeartHealthScreen_a05f156eb6d0819ca5e85ca4b103d8127}\label{classHeartHealthScreen_a05f156eb6d0819ca5e85ca4b103d8127}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!loadDataFromCSV@{loadDataFromCSV}}
+\index{loadDataFromCSV@{loadDataFromCSV}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{loadDataFromCSV()}{loadDataFromCSV()}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::load\+Data\+From\+CSV (\begin{DoxyParamCaption}\item[{const QString \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads historical heart rate data from a CSV file. 
+
+Loads heart rate data from a CSV file.
+
+Reads the CSV file and extracts heart rate values associated with the current user for display.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the CSV file to load.\\
+\hline
+\end{DoxyParams}
+Reads the CSV file, extracts heart rate data associated with the current user, and stores it for use in live chart updates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the CSV file to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeartHealthScreen_ae9a8feeb4eb1643add33662152b151cb}\label{classHeartHealthScreen_ae9a8feeb4eb1643add33662152b151cb}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Paints a custom background based on the risk level. 
+
+Custom paint event to update the background based on risk level.
+
+Overrides the QWidget\+::paint\+Event to draw different background gradients or colors depending on the current risk (e.\+g., moderate risk shows a gradient).
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Pointer to the QPaint\+Event.\\
+\hline
+\end{DoxyParams}
+Overrides the QWidget paint\+Event to draw different background gradients or colors depending on the current risk level (low, moderate, high).
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Pointer to the QPaint\+Event. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeartHealthScreen_a84d96a2c53885e32ee33eb4dea0ebe9c}\label{classHeartHealthScreen_a84d96a2c53885e32ee33eb4dea0ebe9c}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!reset@{reset}}
+\index{reset@{reset}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets all UI elements and internal data to their initial state. 
+
+Resets the \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} to its initial state.
+
+Clears labels, chart data, timers, and any stored historical data.
+
+Clears UI labels, resets internal data used for live chart updates and historical data, and stops any active beeping timers. \mbox{\Hypertarget{classHeartHealthScreen_a0893376a338ee9cb5b81f3f04704ce1c}\label{classHeartHealthScreen_a0893376a338ee9cb5b81f3f04704ce1c}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!setupLiveChart@{setupLiveChart}}
+\index{setupLiveChart@{setupLiveChart}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{setupLiveChart()}{setupLiveChart()}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::setup\+Live\+Chart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Configures the live heart rate chart. 
+
+Initializes the live heart rate chart.
+
+Initializes the QChart, QLine\+Series, and chart axes, and starts the timer for live updates.
+
+Sets up a QChart with a QLine\+Series to display live heart rate data. Configures the chart appearance, axes, and connects a QTimer to update the chart at regular intervals. \mbox{\Hypertarget{classHeartHealthScreen_af4b2d3c2174a1c06932fdfc7b0675c81}\label{classHeartHealthScreen_af4b2d3c2174a1c06932fdfc7b0675c81}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!setupUI@{setupUI}}
+\index{setupUI@{setupUI}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{setupUI()}{setupUI()}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::setup\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets up the user interface components. 
+
+Initializes labels, chart view, buttons, and layouts.
+
+Initializes UI elements such as labels, chart view, and back button. Sets layouts and connects signals to appropriate slots. \mbox{\Hypertarget{classHeartHealthScreen_a10709e4d68b7f7a8f4329b11dfff08a4}\label{classHeartHealthScreen_a10709e4d68b7f7a8f4329b11dfff08a4}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!setUser@{setUser}}
+\index{setUser@{setUser}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{setUser()}{setUser()}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::set\+User (\begin{DoxyParamCaption}\item[{const QString \&}]{username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the current username. 
+
+Updates the username, which is used for data logging and display.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The new username. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeartHealthScreen_aa54adcb6bbbd032e5ca14a585d7e12fa}\label{classHeartHealthScreen_aa54adcb6bbbd032e5ca14a585d7e12fa}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!showResultsForUser@{showResultsForUser}}
+\index{showResultsForUser@{showResultsForUser}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{showResultsForUser}{showResultsForUser}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::show\+Results\+For\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Slot to display previous results for the user from CSV data. 
+
+Displays previous heart health results for the current user.
+
+This slot reloads historical data from a CSV file and updates the UI with past heart rate results.
+
+Clears current data and reloads historical data from the CSV file to display previous results. \mbox{\Hypertarget{classHeartHealthScreen_a878fcd3dac58e92633f22854e04de6a8}\label{classHeartHealthScreen_a878fcd3dac58e92633f22854e04de6a8}} 
+\index{HeartHealthScreen@{HeartHealthScreen}!updateLiveChart@{updateLiveChart}}
+\index{updateLiveChart@{updateLiveChart}!HeartHealthScreen@{HeartHealthScreen}}
+\doxysubsubsection{\texorpdfstring{updateLiveChart}{updateLiveChart}}
+{\footnotesize\ttfamily void Heart\+Health\+Screen\+::update\+Live\+Chart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Updates the live heart rate chart. 
+
+Called automatically by a QTimer to append new heart rate data to the chart in real time.
+
+Retrieves the next heart rate value from live\+Data\+Lines (if available) or generates a random value, then appends the new data point to the chart series. Scrolls the chart if necessary. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/\mbox{\hyperlink{HeartHealthScreen_8h}{Heart\+Health\+Screen.\+h}}\item 
+GUI/\mbox{\hyperlink{HeartHealthScreen_8cpp}{Heart\+Health\+Screen.\+cpp}}\end{DoxyCompactItemize}

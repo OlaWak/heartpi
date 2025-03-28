@@ -1,0 +1,102 @@
+\hypertarget{classRandomNumberGenerator}{}\doxysection{Random\+Number\+Generator Class Reference}
+\label{classRandomNumberGenerator}\index{RandomNumberGenerator@{RandomNumberGenerator}}
+
+
+Generates random numbers within a specified range.  
+
+
+
+
+{\ttfamily \#include $<$Random\+Number\+Generator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRandomNumberGenerator_ab021317b394d6dddb3961e1fe6d4f291}{Random\+Number\+Generator}} (double min, double max)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classRandomNumberGenerator}{Random\+Number\+Generator}} object with a specified range. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRandomNumberGenerator_aa7b6197216d7fa45e8fe24c6490c3742}{generate}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random number within the specified range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRandomNumberGenerator_aeb0d1422e99016e35c19deff3b9cc6d8}\label{classRandomNumberGenerator_aeb0d1422e99016e35c19deff3b9cc6d8}} 
+std\+::mt19937 {\bfseries rng}
+\item 
+\mbox{\Hypertarget{classRandomNumberGenerator_a47be2d68d575adf50c33d25cbd9a7dc6}\label{classRandomNumberGenerator_a47be2d68d575adf50c33d25cbd9a7dc6}} 
+std\+::uniform\+\_\+real\+\_\+distribution$<$ double $>$ {\bfseries dist}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generates random numbers within a specified range. 
+
+This class uses the Mersenne Twister random number engine (std\+::mt19937) along with a uniform real distribution to generate random numbers. It is particularly useful for simulating sensor readings.
+
+\begin{DoxyNote}{Note}
+The random engine is seeded using std\+::random\+\_\+device to ensure a different sequence of random numbers each time the program runs.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Sena Debian and Yosra Alim 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRandomNumberGenerator_ab021317b394d6dddb3961e1fe6d4f291}\label{classRandomNumberGenerator_ab021317b394d6dddb3961e1fe6d4f291}} 
+\index{RandomNumberGenerator@{RandomNumberGenerator}!RandomNumberGenerator@{RandomNumberGenerator}}
+\index{RandomNumberGenerator@{RandomNumberGenerator}!RandomNumberGenerator@{RandomNumberGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNumberGenerator()}{RandomNumberGenerator()}}
+{\footnotesize\ttfamily Random\+Number\+Generator\+::\+Random\+Number\+Generator (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classRandomNumberGenerator}{Random\+Number\+Generator}} object with a specified range. 
+
+Constructs a new \mbox{\hyperlink{classRandomNumberGenerator}{Random\+Number\+Generator}} object.
+
+Initializes the random number generator engine with a random seed and sets up the uniform real distribution with the provided minimum and maximum values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum value for the random number generation. \\
+\hline
+{\em max} & The maximum value for the random number generation.\\
+\hline
+\end{DoxyParams}
+Initializes the random number engine with a random seed and sets up the distribution with the provided minimum and maximum values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum value for the random number generation. \\
+\hline
+{\em max} & The maximum value for the random number generation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRandomNumberGenerator_aa7b6197216d7fa45e8fe24c6490c3742}\label{classRandomNumberGenerator_aa7b6197216d7fa45e8fe24c6490c3742}} 
+\index{RandomNumberGenerator@{RandomNumberGenerator}!generate@{generate}}
+\index{generate@{generate}!RandomNumberGenerator@{RandomNumberGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily double Random\+Number\+Generator\+::generate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a random number within the specified range. 
+
+Uses the configured random engine and uniform distribution to produce a random number.
+
+\begin{DoxyReturn}{Returns}
+double A random number within the range \mbox{[}min, max\mbox{]}.
+\end{DoxyReturn}
+Uses the preconfigured distribution and random number engine to produce and return a random number.
+
+\begin{DoxyReturn}{Returns}
+double A randomly generated number. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RandomNumberGenerator_8h}{Random\+Number\+Generator.\+h}}\item 
+\mbox{\hyperlink{RandomNumberGenerator_8cpp}{Random\+Number\+Generator.\+cpp}}\end{DoxyCompactItemize}

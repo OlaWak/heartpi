@@ -1,0 +1,96 @@
+\hypertarget{classWelcomeScreen}{}\doxysection{Welcome\+Screen Class Reference}
+\label{classWelcomeScreen}\index{WelcomeScreen@{WelcomeScreen}}
+
+
+A widget that displays a personalized welcome message and heart health information.  
+
+
+
+
+{\ttfamily \#include $<$Welcome\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Welcome\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classWelcomeScreen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Welcome\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classWelcomeScreen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWelcomeScreen_aae041e4d59aa2aa5b9941e3e6e971277}{Welcome\+Screen}} (QStacked\+Widget $\ast$stacked\+Widget\+Ref, const QString \&username, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWelcomeScreen_a7c7a4d0bd75b8fa767ce74925e5b6957}\label{classWelcomeScreen_a7c7a4d0bd75b8fa767ce74925e5b6957}} 
+QStacked\+Widget $\ast$ {\bfseries stacked\+Widget}
+\item 
+\mbox{\Hypertarget{classWelcomeScreen_af3efd5db91d4385a4a1f0dcf75386d4c}\label{classWelcomeScreen_af3efd5db91d4385a4a1f0dcf75386d4c}} 
+QString {\bfseries user}
+\item 
+\mbox{\Hypertarget{classWelcomeScreen_a6494d7293a03df302d995986b3b19336}\label{classWelcomeScreen_a6494d7293a03df302d995986b3b19336}} 
+QLabel $\ast$ {\bfseries welcome\+Label}
+\item 
+\mbox{\Hypertarget{classWelcomeScreen_a7667dd9fb725c7106b52db197ec69c68}\label{classWelcomeScreen_a7667dd9fb725c7106b52db197ec69c68}} 
+\mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} $\ast$ {\bfseries heart\+Health\+Screen}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A widget that displays a personalized welcome message and heart health information. 
+
+The \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} class displays a welcome message to the user, retrieves and shows heart rate statistics from a CSV file, and embeds a \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} to display detailed information and charts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWelcomeScreen_aae041e4d59aa2aa5b9941e3e6e971277}\label{classWelcomeScreen_aae041e4d59aa2aa5b9941e3e6e971277}} 
+\index{WelcomeScreen@{WelcomeScreen}!WelcomeScreen@{WelcomeScreen}}
+\index{WelcomeScreen@{WelcomeScreen}!WelcomeScreen@{WelcomeScreen}}
+\doxysubsubsection{\texorpdfstring{WelcomeScreen()}{WelcomeScreen()}}
+{\footnotesize\ttfamily Welcome\+Screen\+::\+Welcome\+Screen (\begin{DoxyParamCaption}\item[{QStacked\+Widget $\ast$}]{stacked\+Widget\+Ref,  }\item[{const QString \&}]{username,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} object. 
+
+Initializes the \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} widget with a reference to the QStacked\+Widget for screen navigation, the current username, and an optional parent widget.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget managing screen transitions. \\
+\hline
+{\em username} & The current user\textquotesingle{}s username. \\
+\hline
+{\em parent} & Pointer to the parent widget (default is nullptr).\\
+\hline
+\end{DoxyParams}
+Initializes the \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} widget with a reference to the QStacked\+Widget for navigation, the username of the current user, and sets up the UI components. The screen displays a welcome message, statistical data from the user\textquotesingle{}s heart rate records, and a historical chart.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget used for navigating between screens. \\
+\hline
+{\em username} & The current user\textquotesingle{}s username. \\
+\hline
+{\em parent} & Pointer to the parent widget (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/\mbox{\hyperlink{WelcomeScreen_8h}{Welcome\+Screen.\+h}}\item 
+GUI/\mbox{\hyperlink{WelcomeScreen_8cpp}{Welcome\+Screen.\+cpp}}\end{DoxyCompactItemize}

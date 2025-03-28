@@ -1,0 +1,105 @@
+\hypertarget{classTipsForUser}{}\doxysection{Tips\+For\+User Class Reference}
+\label{classTipsForUser}\index{TipsForUser@{TipsForUser}}
+
+
+A widget for displaying health tips based on risk level.  
+
+
+
+
+{\ttfamily \#include $<$Tips\+For\+User.\+h$>$}
+
+
+
+Inheritance diagram for Tips\+For\+User\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classTipsForUser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tips\+For\+User\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classTipsForUser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTipsForUser_ace3ed092ec5285e70f89f215d03ff186}{Tips\+For\+User}} (QStacked\+Widget $\ast$stacked\+Widget\+Ref, const QString \&risk\+Level, QWidget $\ast$previous\+Screen, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classTipsForUser}{Tips\+For\+User}} widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTipsForUser_a31e430e0e68efef1daa2dcccfc34ea47}{paint\+Event}} (QPaint\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em Paints the custom gradient background. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTipsForUser_a6baf0a708ef529b9781623976790ce59}\label{classTipsForUser_a6baf0a708ef529b9781623976790ce59}} 
+QStacked\+Widget $\ast$ {\bfseries stacked\+Widget}
+\item 
+\mbox{\Hypertarget{classTipsForUser_a9dce5b6ac49b81c7ab03a9c71e6fb55a}\label{classTipsForUser_a9dce5b6ac49b81c7ab03a9c71e6fb55a}} 
+QWidget $\ast$ {\bfseries previous\+Screen}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A widget for displaying health tips based on risk level. 
+
+The \mbox{\hyperlink{classTipsForUser}{Tips\+For\+User}} class provides a user interface to display various health tips, organized into categories, such as nutrition, activity, sleep, and stress management. The tips are adjusted based on the risk level provided to the widget\textquotesingle{}s constructor. It also maintains a pointer to the previous screen to allow easy navigation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTipsForUser_ace3ed092ec5285e70f89f215d03ff186}\label{classTipsForUser_ace3ed092ec5285e70f89f215d03ff186}} 
+\index{TipsForUser@{TipsForUser}!TipsForUser@{TipsForUser}}
+\index{TipsForUser@{TipsForUser}!TipsForUser@{TipsForUser}}
+\doxysubsubsection{\texorpdfstring{TipsForUser()}{TipsForUser()}}
+{\footnotesize\ttfamily Tips\+For\+User\+::\+Tips\+For\+User (\begin{DoxyParamCaption}\item[{QStacked\+Widget $\ast$}]{stacked\+Widget\+Ref,  }\item[{const QString \&}]{risk\+Level,  }\item[{QWidget $\ast$}]{prev\+Screen,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classTipsForUser}{Tips\+For\+User}} widget. 
+
+Creates a \mbox{\hyperlink{classTipsForUser}{Tips\+For\+User}} widget that displays health tips based on the provided risk level. The constructor sets up the main vertical layout with a title, a scrollable area containing various tip categories and tip boxes, and a back button that navigates to the previous screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget used for screen navigation. \\
+\hline
+{\em risk\+Level} & The risk level (e.\+g., \char`\"{}\+High\char`\"{}, \char`\"{}\+Moderate\char`\"{}, or other) used to tailor the displayed tips. \\
+\hline
+{\em prev\+Screen} & Pointer to the previous widget screen for navigation. \\
+\hline
+{\em parent} & Pointer to the parent widget (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTipsForUser_a31e430e0e68efef1daa2dcccfc34ea47}\label{classTipsForUser_a31e430e0e68efef1daa2dcccfc34ea47}} 
+\index{TipsForUser@{TipsForUser}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!TipsForUser@{TipsForUser}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void Tips\+For\+User\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Paints the custom gradient background. 
+
+Overrides the QWidget\+::paint\+Event to fill the widget\textquotesingle{}s background with a linear gradient that transitions from color \char`\"{}\#532e63\char`\"{} at the top to \char`\"{}\#98002e\char`\"{} at the bottom.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Pointer to the QPaint\+Event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/\mbox{\hyperlink{TipsForUser_8h}{Tips\+For\+User.\+h}}\item 
+GUI/\mbox{\hyperlink{TipsForUser_8cpp}{Tips\+For\+User.\+cpp}}\end{DoxyCompactItemize}

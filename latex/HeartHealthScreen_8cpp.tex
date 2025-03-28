@@ -1,0 +1,47 @@
+\hypertarget{HeartHealthScreen_8cpp}{}\doxysection{GUI/\+Heart\+Health\+Screen.cpp File Reference}
+\label{HeartHealthScreen_8cpp}\index{GUI/HeartHealthScreen.cpp@{GUI/HeartHealthScreen.cpp}}
+
+
+Implements the \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} widget for displaying heart health results and live charts.  
+
+
+{\ttfamily \#include \char`\"{}Heart\+Health\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Random\+Number\+Generator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Calculations.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QMessage\+Box$>$}\newline
+{\ttfamily \#include $<$QFile$>$}\newline
+{\ttfamily \#include $<$QText\+Stream$>$}\newline
+{\ttfamily \#include $<$QDate\+Time$>$}\newline
+{\ttfamily \#include $<$QApplication$>$}\newline
+{\ttfamily \#include $<$QPalette$>$}\newline
+{\ttfamily \#include $<$QSound$>$}\newline
+{\ttfamily \#include $<$QTimer$>$}\newline
+{\ttfamily \#include $<$QDebug$>$}\newline
+{\ttfamily \#include $<$QPainter$>$}\newline
+{\ttfamily \#include $<$QVBox\+Layout$>$}\newline
+{\ttfamily \#include $<$QHBox\+Layout$>$}\newline
+{\ttfamily \#include $<$Qt\+Widgets/\+QPush\+Button$>$}\newline
+{\ttfamily \#include $<$Qt\+Charts/\+QValue\+Axis$>$}\newline
+{\ttfamily \#include $<$Qt\+Charts/\+QChart$>$}\newline
+{\ttfamily \#include $<$QSound\+Effect$>$}\newline
+{\ttfamily \#include $<$QUrl$>$}\newline
+Include dependency graph for Heart\+Health\+Screen.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{HeartHealthScreen_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} widget for displaying heart health results and live charts. 
+
+This file defines the \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} class methods, which provide a user interface to display heart health assessments, live heart rate charts, and historical data. The widget uses Qt Widgets and Qt Charts, integrates with the Calculations and \mbox{\hyperlink{classRandomNumberGenerator}{Random\+Number\+Generator}} modules, and provides visual and audio feedback based on risk levels.
+
+\begin{DoxyNote}{Note}
+The widget is designed to be used within a QStacked\+Widget for screen transitions.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

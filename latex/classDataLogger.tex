@@ -1,0 +1,155 @@
+\hypertarget{classDataLogger}{}\doxysection{Data\+Logger Class Reference}
+\label{classDataLogger}\index{DataLogger@{DataLogger}}
+
+
+Logs sensor data to a CSV file.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Logger.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataLogger_ac941f99a4bc70c15e146408b422aca90}{Data\+Logger}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classDataLogger}{Data\+Logger}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDataLogger_a9aaff109f3e7749a0a0a0313655da50a}{$\sim$\+Data\+Logger}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classDataLogger}{Data\+Logger}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataLogger_a2c8197d7da799489f6cde23a8a84fd3e}{log\+Data}} (const std \+::string \&timestamp, double heart\+Rate, double sys\+BP, double dias\+BP, double cholesterol, double ecg)
+\begin{DoxyCompactList}\small\item\em Logs sensor data to the CSV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classDataLogger_ab979d30b4999edf0bc1364dc400ad61d}{get\+Current\+Timestamp}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataLogger_ae3488eff04513df344cfef5236ce7ea4}\label{classDataLogger_ae3488eff04513df344cfef5236ce7ea4}} 
+std\+::string {\bfseries file\+Path}
+\item 
+\mbox{\Hypertarget{classDataLogger_af307359baa7783799e7e1826586c07cc}\label{classDataLogger_af307359baa7783799e7e1826586c07cc}} 
+std\+::ofstream {\bfseries file\+Stream}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logs sensor data to a CSV file. 
+
+The \mbox{\hyperlink{classDataLogger}{Data\+Logger}} class handles file operations for logging sensor data. It writes the data along with timestamps to a CSV file, ensuring that data is appended correctly and the file is properly closed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataLogger_ac941f99a4bc70c15e146408b422aca90}\label{classDataLogger_ac941f99a4bc70c15e146408b422aca90}} 
+\index{DataLogger@{DataLogger}!DataLogger@{DataLogger}}
+\index{DataLogger@{DataLogger}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{DataLogger()}{DataLogger()}}
+{\footnotesize\ttfamily Data\+Logger\+::\+Data\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classDataLogger}{Data\+Logger}} object. 
+
+Initializes the \mbox{\hyperlink{classDataLogger}{Data\+Logger}} with the specified CSV file name. Opens the file in append mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name (and path) of the CSV log file.\\
+\hline
+\end{DoxyParams}
+Initializes the \mbox{\hyperlink{classDataLogger}{Data\+Logger}} with the provided log file name. Opens the file in append mode. If the file fails to open, an error message is logged. If the file is empty, a header line is written.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name (and path) of the log file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDataLogger_a9aaff109f3e7749a0a0a0313655da50a}\label{classDataLogger_a9aaff109f3e7749a0a0a0313655da50a}} 
+\index{DataLogger@{DataLogger}!````~DataLogger@{$\sim$DataLogger}}
+\index{````~DataLogger@{$\sim$DataLogger}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{$\sim$DataLogger()}{~DataLogger()}}
+{\footnotesize\ttfamily Data\+Logger\+::$\sim$\+Data\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classDataLogger}{Data\+Logger}} class. 
+
+Ensures that the file stream is properly closed when the \mbox{\hyperlink{classDataLogger}{Data\+Logger}} object is destroyed.
+
+Closes the log file if it is open. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataLogger_ab979d30b4999edf0bc1364dc400ad61d}\label{classDataLogger_ab979d30b4999edf0bc1364dc400ad61d}} 
+\index{DataLogger@{DataLogger}!getCurrentTimestamp@{getCurrentTimestamp}}
+\index{getCurrentTimestamp@{getCurrentTimestamp}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{getCurrentTimestamp()}{getCurrentTimestamp()}}
+{\footnotesize\ttfamily std\+::string Data\+Logger\+::get\+Current\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retrieves the current timestamp. 
+
+Retrieves the current timestamp as a formatted string.
+
+Obtains and formats the current system time to be used as a timestamp for logged data.
+
+\begin{DoxyReturn}{Returns}
+std\+::string The current timestamp formatted as a string.
+\end{DoxyReturn}
+Obtains the current system time and formats it according to the pattern \char`\"{}\%y-\/\%m-\/\%d \%\+H\+:\%\+M\+:\%\+S\char`\"{}.
+
+\begin{DoxyReturn}{Returns}
+std\+::string The formatted current timestamp. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataLogger_a2c8197d7da799489f6cde23a8a84fd3e}\label{classDataLogger_a2c8197d7da799489f6cde23a8a84fd3e}} 
+\index{DataLogger@{DataLogger}!logData@{logData}}
+\index{logData@{logData}!DataLogger@{DataLogger}}
+\doxysubsubsection{\texorpdfstring{logData()}{logData()}}
+{\footnotesize\ttfamily void Data\+Logger\+::log\+Data (\begin{DoxyParamCaption}\item[{const std \+::string \&}]{timestamp,  }\item[{double}]{heart\+Rate,  }\item[{double}]{sys\+BP,  }\item[{double}]{dias\+BP,  }\item[{double}]{cholesterol,  }\item[{double}]{ecg }\end{DoxyParamCaption})}
+
+
+
+Logs sensor data to the CSV file. 
+
+Logs sensor data to the log file.
+
+Writes the provided timestamp and sensor readings (heart rate, systolic and diastolic blood pressure, cholesterol, and ECG) as a new line in the CSV file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & The timestamp for the logged data. \\
+\hline
+{\em heart\+Rate} & The heart rate reading. \\
+\hline
+{\em sys\+BP} & The systolic blood pressure reading. \\
+\hline
+{\em dias\+BP} & The diastolic blood pressure reading. \\
+\hline
+{\em cholesterol} & The cholesterol level reading. \\
+\hline
+{\em ecg} & The ECG reading.\\
+\hline
+\end{DoxyParams}
+Writes a line of sensor data, including the timestamp and various sensor readings, to the log file. The data is separated by commas. If the log file is not open, an error is logged.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & The timestamp associated with the sensor data. \\
+\hline
+{\em heart\+Rate} & The heart rate reading. \\
+\hline
+{\em sys\+BP} & The systolic blood pressure reading. \\
+\hline
+{\em dias\+BP} & The diastolic blood pressure reading. \\
+\hline
+{\em cholesterol} & The cholesterol level reading. \\
+\hline
+{\em ecg} & The ECG reading. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DataLogger_8h}{Data\+Logger.\+h}}\item 
+\mbox{\hyperlink{DataLogger_8cpp}{Data\+Logger.\+cpp}}\end{DoxyCompactItemize}

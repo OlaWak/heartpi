@@ -1,0 +1,40 @@
+\hypertarget{WelcomeScreen_8cpp}{}\doxysection{GUI/\+Welcome\+Screen.cpp File Reference}
+\label{WelcomeScreen_8cpp}\index{GUI/WelcomeScreen.cpp@{GUI/WelcomeScreen.cpp}}
+
+
+Implements the \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} widget which displays a personalized welcome message, user heart rate statistics, and a historical chart.  
+
+
+{\ttfamily \#include \char`\"{}Welcome\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tips\+For\+User.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QVBox\+Layout$>$}\newline
+{\ttfamily \#include $<$QHBox\+Layout$>$}\newline
+{\ttfamily \#include $<$QLabel$>$}\newline
+{\ttfamily \#include $<$QFile$>$}\newline
+{\ttfamily \#include $<$QText\+Stream$>$}\newline
+{\ttfamily \#include $<$QDate\+Time$>$}\newline
+{\ttfamily \#include $<$QFrame$>$}\newline
+{\ttfamily \#include $<$QPush\+Button$>$}\newline
+{\ttfamily \#include $<$Qt\+Charts/\+QChart\+View$>$}\newline
+{\ttfamily \#include $<$Qt\+Charts/\+QLine\+Series$>$}\newline
+{\ttfamily \#include $<$Qt\+Charts/\+QValue\+Axis$>$}\newline
+Include dependency graph for Welcome\+Screen.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{WelcomeScreen_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} widget which displays a personalized welcome message, user heart rate statistics, and a historical chart. 
+
+The \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} class reads the user\textquotesingle{}s heart rate data from a CSV file (\char`\"{}userdata.\+csv\char`\"{}), calculates statistics such as the average and latest heart rate, and determines the user\textquotesingle{}s risk level. It also provides navigation buttons, including one to display tailored health tips via the \mbox{\hyperlink{classTipsForUser}{Tips\+For\+User}} widget.
+
+\begin{DoxyNote}{Note}
+This widget is designed to be used within a QStacked\+Widget for screen navigation.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

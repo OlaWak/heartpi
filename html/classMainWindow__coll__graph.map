@@ -1,0 +1,11 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node1" title="The main window of the HeartPi application." alt="" coords="779,129,885,156"/>
+<area shape="rect" id="node2" title=" " alt="" coords="470,5,586,32"/>
+<area shape="rect" id="node3" href="$classHeartHealthScreen.html" title="A widget that displays heart health results and a live heart rate chart." alt="" coords="455,169,601,196"/>
+<area shape="rect" id="node4" href="$classCustomBackgroundWidget.html" title="A widget with a custom background and animated heartbeat wave." alt="" coords="133,169,328,196"/>
+<area shape="rect" id="node6" href="$classResultsLoginScreen.html" title="A widget for user login to view previous results." alt="" coords="453,220,603,247"/>
+<area shape="rect" id="node7" href="$classSurveyFormScreen.html" title="A widget for collecting heart health survey data." alt="" coords="456,56,600,83"/>
+<area shape="rect" id="node9" href="$classSurveyScreen.html" title="A widget for user registration/login for the heart health survey." alt="" coords="473,271,583,297"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,169,84,196"/>
+<area shape="rect" id="node8" href="$classFamilyHealth.html" title="Holds personal and family health data." alt="" coords="177,31,285,57"/>
+</map>

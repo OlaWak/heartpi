@@ -1,0 +1,6 @@
+<map id="SurveyFormScreen" name="SurveyFormScreen">
+<area shape="rect" id="node1" title="A widget for collecting heart health survey data." alt="" coords="119,171,263,197"/>
+<area shape="rect" id="node2" href="$classCustomBackgroundWidget.html" title="A widget with a custom background and animated heartbeat wave." alt="" coords="5,81,200,108"/>
+<area shape="rect" id="node3" title=" " alt="" coords="63,5,142,32"/>
+<area shape="rect" id="node4" href="$classFamilyHealth.html" title="Holds personal and family health data." alt="" coords="225,81,333,108"/>
+</map>

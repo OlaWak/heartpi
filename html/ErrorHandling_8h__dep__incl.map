@@ -1,0 +1,6 @@
+<map id="ErrorHandling.h" name="ErrorHandling.h">
+<area shape="rect" id="node1" title="Declaration of the ErrorHandling class." alt="" coords="79,5,201,32"/>
+<area shape="rect" id="node2" href="$DataLogger_8h.html" title="Declaration of the DataLogger class." alt="" coords="13,80,121,107"/>
+<area shape="rect" id="node4" href="$ErrorHandling_8cpp.html" title="Implements error handling utilities for logging error messages and exceptions." alt="" coords="145,80,284,107"/>
+<area shape="rect" id="node3" href="$DataLogger_8cpp.html" title="Implements the DataLogger class methods for logging sensor data." alt="" coords="5,155,128,181"/>
+</map>

@@ -1,0 +1,122 @@
+\hypertarget{classMainWindow}{}\doxysection{Main\+Window Class Reference}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+
+
+The main window of the Heart\+Pi application.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classMainWindow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Window\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMainWindow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classMainWindow}{Main\+Window}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a0aa1233d65eeef307de8a9a7face0014}\label{classMainWindow_a0aa1233d65eeef307de8a9a7face0014}} 
+void {\bfseries show\+Survey\+Screen} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_a3d36e2c961d652ddd522f21d8c80137d}\label{classMainWindow_a3d36e2c961d652ddd522f21d8c80137d}} 
+void {\bfseries show\+Survey\+Form} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_aa203e915bb8c71b7dd96b6b2f229e16f}\label{classMainWindow_aa203e915bb8c71b7dd96b6b2f229e16f}} 
+void {\bfseries return\+To\+Main} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_aae9772d21bd2d4f5280430b147032bd9}\label{classMainWindow_aae9772d21bd2d4f5280430b147032bd9}} 
+void {\bfseries show\+Results\+Login\+Screen} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMainWindow_a5d3f8231e04505de3d2855d69b273b60}{setup\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Sets up the main menu interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_aa86720a51d3246a6dc316d51488dcb15}\label{classMainWindow_aa86720a51d3246a6dc316d51488dcb15}} 
+QStacked\+Widget $\ast$ \mbox{\hyperlink{classMainWindow_aa86720a51d3246a6dc316d51488dcb15}{stacked\+Widget}}
+\begin{DoxyCompactList}\small\item\em Manages the application\textquotesingle{}s screen transitions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_ad896d10b06d64fd6916cf175cc35f0ff}\label{classMainWindow_ad896d10b06d64fd6916cf175cc35f0ff}} 
+\mbox{\hyperlink{classCustomBackgroundWidget}{Custom\+Background\+Widget}} $\ast$ \mbox{\hyperlink{classMainWindow_ad896d10b06d64fd6916cf175cc35f0ff}{main\+Menu\+Widget}}
+\begin{DoxyCompactList}\small\item\em Main menu widget with an animated background. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_a99d2424896546e2c038d7348e28936fa}\label{classMainWindow_a99d2424896546e2c038d7348e28936fa}} 
+\mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} $\ast$ \mbox{\hyperlink{classMainWindow_a99d2424896546e2c038d7348e28936fa}{survey\+Screen}}
+\begin{DoxyCompactList}\small\item\em Screen for user registration/login. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_a6e26b7f6c718c529388e750ba6e96ed0}\label{classMainWindow_a6e26b7f6c718c529388e750ba6e96ed0}} 
+\mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} $\ast$ {\bfseries survey\+Form\+Screen}
+\item 
+\mbox{\Hypertarget{classMainWindow_a604237b6423f8729026fbbb6ca95d36a}\label{classMainWindow_a604237b6423f8729026fbbb6ca95d36a}} 
+\mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} $\ast$ {\bfseries heart\+Health\+Screen}
+\item 
+\mbox{\Hypertarget{classMainWindow_a2072d82a81a9651fff82027d56ce5710}\label{classMainWindow_a2072d82a81a9651fff82027d56ce5710}} 
+\mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} $\ast$ {\bfseries results\+Login\+Screen}
+\item 
+\mbox{\Hypertarget{classMainWindow_a5f0bed2c1fde27230b9f73eb5eeacc10}\label{classMainWindow_a5f0bed2c1fde27230b9f73eb5eeacc10}} 
+QString {\bfseries current\+Username}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main window of the Heart\+Pi application. 
+
+\mbox{\hyperlink{classMainWindow}{Main\+Window}} sets up the main menu with an animated background and handles navigation between different screens of the application, including user registration/login and heart health assessment. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classMainWindow}{Main\+Window}} object. 
+
+Initializes the main window, creates and adds the necessary screens to the QStacked\+Widget, and sets up signal-\/slot connections for navigation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to the parent widget (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_a5d3f8231e04505de3d2855d69b273b60}\label{classMainWindow_a5d3f8231e04505de3d2855d69b273b60}} 
+\index{MainWindow@{MainWindow}!setupMainMenu@{setupMainMenu}}
+\index{setupMainMenu@{setupMainMenu}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setupMainMenu()}{setupMainMenu()}}
+{\footnotesize\ttfamily void Main\+Window\+::setup\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets up the main menu interface. 
+
+Creates the main menu widget with an animated background and adds navigation buttons. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/mainwindow.\+h\item 
+GUI/\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

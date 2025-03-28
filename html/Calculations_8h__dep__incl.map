@@ -1,0 +1,12 @@
+<map id="Calculations.h" name="Calculations.h">
+<area shape="rect" id="node1" title="Header file for heart health assessment functionality." alt="" coords="115,5,230,32"/>
+<area shape="rect" id="node2" href="$Calculations_8cpp.html" title="Contains the implementation of the heart health assessment function." alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node3" href="$HeartHealthScreen_8cpp.html" title="Implements the HeartHealthScreen widget for displaying heart health results and live charts." alt="" coords="41,155,241,181"/>
+<area shape="rect" id="node4" href="$HeartHealthScreen_8h.html" title="Declaration of the HeartHealthScreen widget." alt="" coords="244,80,429,107"/>
+<area shape="rect" id="node5" href="$mainwindow_8h_source.html" title=" " alt="" coords="265,155,409,181"/>
+<area shape="rect" id="node8" href="$SurveyFormScreen_8cpp.html" title="Implements the SurveyFormScreen widget for collecting heart health survey data." alt="" coords="433,155,632,181"/>
+<area shape="rect" id="node9" href="$WelcomeScreen_8h.html" title="Declaration of the WelcomeScreen widget." alt="" coords="656,155,823,181"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="Main entry point of the application." alt="" coords="281,229,392,256"/>
+<area shape="rect" id="node7" href="$mainwindow_8cpp.html" title="Implements the MainWindow class which serves as the central hub for the HeartPi application." alt="" coords="441,229,600,256"/>
+<area shape="rect" id="node10" href="$WelcomeScreen_8cpp.html" title="Implements the WelcomeScreen widget which displays a personalized welcome message,..." alt="" coords="649,229,830,256"/>
+</map>

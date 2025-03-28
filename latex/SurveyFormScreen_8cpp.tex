@@ -1,0 +1,30 @@
+\hypertarget{SurveyFormScreen_8cpp}{}\doxysection{GUI/\+Survey\+Form\+Screen.cpp File Reference}
+\label{SurveyFormScreen_8cpp}\index{GUI/SurveyFormScreen.cpp@{GUI/SurveyFormScreen.cpp}}
+
+
+Implements the \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} widget for collecting heart health survey data.  
+
+
+{\ttfamily \#include \char`\"{}Survey\+Form\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Heart\+Health\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QMessage\+Box$>$}\newline
+Include dependency graph for Survey\+Form\+Screen.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SurveyFormScreen_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} widget for collecting heart health survey data. 
+
+This file defines the \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} class methods. The widget displays a survey form with various questions regarding the user\textquotesingle{}s health, collects the responses, and then emits a signal with the collected \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} data. Upon submission, it transitions to the \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} to display results.
+
+\begin{DoxyNote}{Note}
+The survey questions include age group, gender, sleep hours, exercise frequency, family history, diet type, and smoking status.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

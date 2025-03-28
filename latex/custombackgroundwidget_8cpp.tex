@@ -1,0 +1,32 @@
+\hypertarget{custombackgroundwidget_8cpp}{}\doxysection{GUI/custombackgroundwidget.cpp File Reference}
+\label{custombackgroundwidget_8cpp}\index{GUI/custombackgroundwidget.cpp@{GUI/custombackgroundwidget.cpp}}
+
+
+Implements the \mbox{\hyperlink{classCustomBackgroundWidget}{Custom\+Background\+Widget}} class.  
+
+
+{\ttfamily \#include \char`\"{}custombackgroundwidget.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QPainter$>$}\newline
+{\ttfamily \#include $<$QPainter\+Path$>$}\newline
+{\ttfamily \#include $<$QLinear\+Gradient$>$}\newline
+{\ttfamily \#include $<$Qt\+Math$>$}\newline
+Include dependency graph for custombackgroundwidget.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{custombackgroundwidget_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classCustomBackgroundWidget}{Custom\+Background\+Widget}} class. 
+
+The \mbox{\hyperlink{classCustomBackgroundWidget}{Custom\+Background\+Widget}} provides a custom background with an animated heartbeat wave. The widget uses a QTimer to update the animation and overrides the paint\+Event to draw a linear gradient background and a heartbeat waveform when the animation is active.
+
+\begin{DoxyNote}{Note}
+The animation is not started automatically. Use start\+Animation() to begin and stop\+Animation() to end the animation.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

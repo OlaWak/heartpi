@@ -1,0 +1,186 @@
+\hypertarget{classResultsLoginScreen}{}\doxysection{Results\+Login\+Screen Class Reference}
+\label{classResultsLoginScreen}\index{ResultsLoginScreen@{ResultsLoginScreen}}
+
+
+A widget for user login to view previous results.  
+
+
+
+
+{\ttfamily \#include $<$Results\+Login\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Results\+Login\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classResultsLoginScreen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Results\+Login\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classResultsLoginScreen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classResultsLoginScreen_a932be5c7f4f98ccfc1ec6cbe7d8b8d21}{login\+Successful}} (const QString \&username)
+\begin{DoxyCompactList}\small\item\em Signal emitted upon a successful login. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResultsLoginScreen_af67b250dea190daaac6beda8177b3fec}{Results\+Login\+Screen}} (QStacked\+Widget $\ast$stacked\+Widget\+Ref, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResultsLoginScreen_a09a1bd74a689e98324fbdb82323d240f}{update\+Accounts}} ()
+\begin{DoxyCompactList}\small\item\em Updates the account list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classResultsLoginScreen_a80a4a15e3036cacf30dd4a25b429f5d0}{attempt\+Login}} ()
+\begin{DoxyCompactList}\small\item\em Attempts to log in the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResultsLoginScreen_a94356cd0bdfc22488d6f829642008f10}{go\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Navigates back to the previous screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classResultsLoginScreen_a07eb5d67f17b83a92e61345c59fa48ca}{setup\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Sets up the user interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classResultsLoginScreen_a7b29cd032db5ff947edb0d9c5a45fda3}\label{classResultsLoginScreen_a7b29cd032db5ff947edb0d9c5a45fda3}} 
+QStacked\+Widget $\ast$ {\bfseries stacked\+Widget}
+\item 
+\mbox{\Hypertarget{classResultsLoginScreen_a59fc30afe59189419de2ba7c52bbc6ac}\label{classResultsLoginScreen_a59fc30afe59189419de2ba7c52bbc6ac}} 
+QCombo\+Box $\ast$ {\bfseries account\+Combo\+Box}
+\item 
+\mbox{\Hypertarget{classResultsLoginScreen_a42fe6763f566693b6b5287a8561805a5}\label{classResultsLoginScreen_a42fe6763f566693b6b5287a8561805a5}} 
+QLine\+Edit $\ast$ {\bfseries password\+Field}
+\item 
+\mbox{\Hypertarget{classResultsLoginScreen_a18812c78ea5f6efcadd6329e17864920}\label{classResultsLoginScreen_a18812c78ea5f6efcadd6329e17864920}} 
+QPush\+Button $\ast$ {\bfseries login\+Button}
+\item 
+\mbox{\Hypertarget{classResultsLoginScreen_a5b7239a2a34afe0d943caa95912fa054}\label{classResultsLoginScreen_a5b7239a2a34afe0d943caa95912fa054}} 
+QPush\+Button $\ast$ {\bfseries back\+Button}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A widget for user login to view previous results. 
+
+The \mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} class provides an interface for users to log in by selecting an account and entering a password. It verifies the credentials and emits a signal upon a successful login. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResultsLoginScreen_af67b250dea190daaac6beda8177b3fec}\label{classResultsLoginScreen_af67b250dea190daaac6beda8177b3fec}} 
+\index{ResultsLoginScreen@{ResultsLoginScreen}!ResultsLoginScreen@{ResultsLoginScreen}}
+\index{ResultsLoginScreen@{ResultsLoginScreen}!ResultsLoginScreen@{ResultsLoginScreen}}
+\doxysubsubsection{\texorpdfstring{ResultsLoginScreen()}{ResultsLoginScreen()}}
+{\footnotesize\ttfamily Results\+Login\+Screen\+::\+Results\+Login\+Screen (\begin{DoxyParamCaption}\item[{QStacked\+Widget $\ast$}]{stacked\+Widget\+Ref,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} object. 
+
+Initializes the login screen with a reference to the stacked widget for navigation and sets up the UI elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget used for screen navigation. \\
+\hline
+{\em parent} & Pointer to the parent widget (default is nullptr).\\
+\hline
+\end{DoxyParams}
+Initializes the \mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} widget with a reference to the stacked widget for navigation and sets up the user interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget used for screen navigation. \\
+\hline
+{\em parent} & Pointer to the parent widget (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResultsLoginScreen_a80a4a15e3036cacf30dd4a25b429f5d0}\label{classResultsLoginScreen_a80a4a15e3036cacf30dd4a25b429f5d0}} 
+\index{ResultsLoginScreen@{ResultsLoginScreen}!attemptLogin@{attemptLogin}}
+\index{attemptLogin@{attemptLogin}!ResultsLoginScreen@{ResultsLoginScreen}}
+\doxysubsubsection{\texorpdfstring{attemptLogin}{attemptLogin}}
+{\footnotesize\ttfamily void Results\+Login\+Screen\+::attempt\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Attempts to log in the user. 
+
+Attempts to log in the user based on entered credentials.
+
+Validates the entered credentials and emits the login\+Successful signal if the login is successful.
+
+Validates that both the account and password fields are non-\/empty, checks password rules (length, containing at least one letter and one digit), and verifies the credentials against the CSV file. If the login is successful, emits the login\+Successful signal; otherwise, shows an appropriate warning. \mbox{\Hypertarget{classResultsLoginScreen_a94356cd0bdfc22488d6f829642008f10}\label{classResultsLoginScreen_a94356cd0bdfc22488d6f829642008f10}} 
+\index{ResultsLoginScreen@{ResultsLoginScreen}!goBack@{goBack}}
+\index{goBack@{goBack}!ResultsLoginScreen@{ResultsLoginScreen}}
+\doxysubsubsection{\texorpdfstring{goBack}{goBack}}
+{\footnotesize\ttfamily void Results\+Login\+Screen\+::go\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Navigates back to the previous screen. 
+
+Navigates back to the main menu.
+
+Sets the current index of the stacked widget to 0 (assumed to be the main menu screen). \mbox{\Hypertarget{classResultsLoginScreen_a932be5c7f4f98ccfc1ec6cbe7d8b8d21}\label{classResultsLoginScreen_a932be5c7f4f98ccfc1ec6cbe7d8b8d21}} 
+\index{ResultsLoginScreen@{ResultsLoginScreen}!loginSuccessful@{loginSuccessful}}
+\index{loginSuccessful@{loginSuccessful}!ResultsLoginScreen@{ResultsLoginScreen}}
+\doxysubsubsection{\texorpdfstring{loginSuccessful}{loginSuccessful}}
+{\footnotesize\ttfamily void Results\+Login\+Screen\+::login\+Successful (\begin{DoxyParamCaption}\item[{const QString \&}]{username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted upon a successful login. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the account that successfully logged in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classResultsLoginScreen_a07eb5d67f17b83a92e61345c59fa48ca}\label{classResultsLoginScreen_a07eb5d67f17b83a92e61345c59fa48ca}} 
+\index{ResultsLoginScreen@{ResultsLoginScreen}!setupUI@{setupUI}}
+\index{setupUI@{setupUI}!ResultsLoginScreen@{ResultsLoginScreen}}
+\doxysubsubsection{\texorpdfstring{setupUI()}{setupUI()}}
+{\footnotesize\ttfamily void Results\+Login\+Screen\+::setup\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets up the user interface. 
+
+Sets up the user interface for the login screen.
+
+Creates and arranges UI components such as the account combo box, password field, login button, and back button.
+
+Creates and configures UI elements including a title label, account combo box, password field, login button, and back button. Also arranges these elements using a QVBox\+Layout. \mbox{\Hypertarget{classResultsLoginScreen_a09a1bd74a689e98324fbdb82323d240f}\label{classResultsLoginScreen_a09a1bd74a689e98324fbdb82323d240f}} 
+\index{ResultsLoginScreen@{ResultsLoginScreen}!updateAccounts@{updateAccounts}}
+\index{updateAccounts@{updateAccounts}!ResultsLoginScreen@{ResultsLoginScreen}}
+\doxysubsubsection{\texorpdfstring{updateAccounts()}{updateAccounts()}}
+{\footnotesize\ttfamily void Results\+Login\+Screen\+::update\+Accounts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the account list. 
+
+Updates the account combo box with usernames from the CSV file.
+
+Reads available account names from a CSV file and populates the account combo box.
+
+Opens \char`\"{}userdata.\+csv\char`\"{} and reads registration rows (those with exactly 2 columns\+: username and password). The account\+Combo\+Box is then populated with the unique usernames found. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/\mbox{\hyperlink{ResultsLoginScreen_8h}{Results\+Login\+Screen.\+h}}\item 
+GUI/\mbox{\hyperlink{ResultsLoginScreen_8cpp}{Results\+Login\+Screen.\+cpp}}\end{DoxyCompactItemize}

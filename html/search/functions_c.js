@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['saveuserdata_187',['saveUserData',['../classSurveyScreen.html#a996ffb556a6cee8af35890c651a2b503',1,'SurveyScreen']]],
+  ['sendemail_188',['sendEmail',['../classEmailSender.html#a3f11a5360b244cd559dc698e60d29492',1,'EmailSender']]],
+  ['setagegroup_189',['setAgeGroup',['../classFamilyHealth.html#a3121186abb1d822d892c52ea577acd3a',1,'FamilyHealth']]],
+  ['setdiettype_190',['setDietType',['../classFamilyHealth.html#ae2510ee1e167f4f83d26d25fa4041be0',1,'FamilyHealth']]],
+  ['setexercisefrequency_191',['setExerciseFrequency',['../classFamilyHealth.html#afd4b7012d069b99516012a7a381a058c',1,'FamilyHealth']]],
+  ['setfamilydiseasehistory_192',['setFamilyDiseaseHistory',['../classFamilyHealth.html#a703866498fe42515f3979427180f16e1',1,'FamilyHealth']]],
+  ['setgender_193',['setGender',['../classFamilyHealth.html#a08e9f0cb95c00e21c5bd1bd4a7ccb5ea',1,'FamilyHealth']]],
+  ['setissmoker_194',['setIsSmoker',['../classFamilyHealth.html#a81a7916f2234cabff90a52fd257ecd75',1,'FamilyHealth']]],
+  ['setsleephours_195',['setSleepHours',['../classFamilyHealth.html#ae7f88e33ef7cadf312c9912bbbed6676',1,'FamilyHealth']]],
+  ['setuplivechart_196',['setupLiveChart',['../classHeartHealthScreen.html#a0893376a338ee9cb5b81f3f04704ce1c',1,'HeartHealthScreen']]],
+  ['setupmainmenu_197',['setupMainMenu',['../classMainWindow.html#a5d3f8231e04505de3d2855d69b273b60',1,'MainWindow']]],
+  ['setupui_198',['setupUI',['../classHeartHealthScreen.html#af4b2d3c2174a1c06932fdfc7b0675c81',1,'HeartHealthScreen::setupUI()'],['../classResultsLoginScreen.html#a07eb5d67f17b83a92e61345c59fa48ca',1,'ResultsLoginScreen::setupUI()']]],
+  ['setuser_199',['setUser',['../classHeartHealthScreen.html#a10709e4d68b7f7a8f4329b11dfff08a4',1,'HeartHealthScreen']]],
+  ['showresultsforuser_200',['showResultsForUser',['../classHeartHealthScreen.html#aa54adcb6bbbd032e5ca14a585d7e12fa',1,'HeartHealthScreen']]],
+  ['submitsurvey_201',['submitSurvey',['../classSurveyFormScreen.html#abf887b70ac5cb37cc76367107821d0cd',1,'SurveyFormScreen']]],
+  ['surveyformscreen_202',['SurveyFormScreen',['../classSurveyFormScreen.html#a25e8e5eebef1bfd36a5d417d1290aada',1,'SurveyFormScreen']]],
+  ['surveyscreen_203',['SurveyScreen',['../classSurveyScreen.html#a68e85c840dbdd5d6baa644fd7a3331bc',1,'SurveyScreen']]]
+];

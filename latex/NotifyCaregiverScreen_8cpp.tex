@@ -1,0 +1,41 @@
+\hypertarget{NotifyCaregiverScreen_8cpp}{}\doxysection{GUI/\+Notify\+Caregiver\+Screen.cpp File Reference}
+\label{NotifyCaregiverScreen_8cpp}\index{GUI/NotifyCaregiverScreen.cpp@{GUI/NotifyCaregiverScreen.cpp}}
+
+
+Implements the \mbox{\hyperlink{classNotifyCaregiverScreen}{Notify\+Caregiver\+Screen}} widget for sending alert emails to caregivers.  
+
+
+{\ttfamily \#include \char`\"{}Notify\+Caregiver\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Email\+Sender.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QStacked\+Widget$>$}\newline
+{\ttfamily \#include $<$QVBox\+Layout$>$}\newline
+{\ttfamily \#include $<$QLabel$>$}\newline
+{\ttfamily \#include $<$QCombo\+Box$>$}\newline
+{\ttfamily \#include $<$QLine\+Edit$>$}\newline
+{\ttfamily \#include $<$QPush\+Button$>$}\newline
+{\ttfamily \#include $<$QFile$>$}\newline
+{\ttfamily \#include $<$QText\+Stream$>$}\newline
+{\ttfamily \#include $<$QMessage\+Box$>$}\newline
+{\ttfamily \#include $<$QSet$>$}\newline
+{\ttfamily \#include $<$QDebug$>$}\newline
+{\ttfamily \#include $<$QDate\+Time$>$}\newline
+Include dependency graph for Notify\+Caregiver\+Screen.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{NotifyCaregiverScreen_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classNotifyCaregiverScreen}{Notify\+Caregiver\+Screen}} widget for sending alert emails to caregivers. 
+
+This file defines the \mbox{\hyperlink{classNotifyCaregiverScreen}{Notify\+Caregiver\+Screen}} class methods which allow a user to select their account, enter a password, and provide a recipient email to send a Heart\+Pi alert. The screen loads available accounts from a CSV file, verifies credentials, fetches heart rate data, computes risk levels, and composes an alert email using the \mbox{\hyperlink{classEmailSender}{Email\+Sender}} module.
+
+\begin{DoxyNote}{Note}
+The CSV file \char`\"{}userdata.\+csv\char`\"{} is used both for registration (2-\/column rows) and heart rate data (3-\/column rows).
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

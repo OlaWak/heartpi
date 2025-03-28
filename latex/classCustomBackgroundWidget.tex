@@ -1,0 +1,104 @@
+\hypertarget{classCustomBackgroundWidget}{}\doxysection{Custom\+Background\+Widget Class Reference}
+\label{classCustomBackgroundWidget}\index{CustomBackgroundWidget@{CustomBackgroundWidget}}
+
+
+A widget with a custom background and animated heartbeat wave.  
+
+
+
+
+{\ttfamily \#include $<$custombackgroundwidget.\+h$>$}
+
+
+
+Inheritance diagram for Custom\+Background\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCustomBackgroundWidget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Custom\+Background\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classCustomBackgroundWidget__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCustomBackgroundWidget_ad10d9ea76e8ca6e1d897d4b512992ce3}\label{classCustomBackgroundWidget_ad10d9ea76e8ca6e1d897d4b512992ce3}} 
+void {\bfseries resized} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCustomBackgroundWidget_a83b1cd7a2b60d82f3534bf2749742736}{Custom\+Background\+Widget}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classCustomBackgroundWidget}{Custom\+Background\+Widget}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCustomBackgroundWidget_af44e486ac7c0ac83206d44a0e1e9edba}\label{classCustomBackgroundWidget_af44e486ac7c0ac83206d44a0e1e9edba}} 
+void {\bfseries start\+Animation} ()
+\item 
+\mbox{\Hypertarget{classCustomBackgroundWidget_ab0bb01029ec1e736be3fe75fb66e934b}\label{classCustomBackgroundWidget_ab0bb01029ec1e736be3fe75fb66e934b}} 
+void {\bfseries stop\+Animation} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCustomBackgroundWidget_a835aa95d3c77210274e0da7df1eba6fc}\label{classCustomBackgroundWidget_a835aa95d3c77210274e0da7df1eba6fc}} 
+void {\bfseries paint\+Event} (QPaint\+Event $\ast$event) override
+\item 
+\mbox{\Hypertarget{classCustomBackgroundWidget_ae418282d090635007d1e45b0e519ae9d}\label{classCustomBackgroundWidget_ae418282d090635007d1e45b0e519ae9d}} 
+void {\bfseries resize\+Event} (QResize\+Event $\ast$event) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCustomBackgroundWidget_a8ad7cc41ae08f07222d6f88d51dc5ff0}\label{classCustomBackgroundWidget_a8ad7cc41ae08f07222d6f88d51dc5ff0}} 
+QTimer $\ast$ {\bfseries timer}
+\item 
+\mbox{\Hypertarget{classCustomBackgroundWidget_ac64dc4d27ab01b6b57a495b21b8840c9}\label{classCustomBackgroundWidget_ac64dc4d27ab01b6b57a495b21b8840c9}} 
+int {\bfseries offsetX}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A widget with a custom background and animated heartbeat wave. 
+
+The \mbox{\hyperlink{classCustomBackgroundWidget}{Custom\+Background\+Widget}} class inherits from QWidget and provides a custom-\/painted background featuring a linear gradient. When animation is enabled, it displays a heartbeat wave animation. It emits a resized() signal whenever the widget is resized. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCustomBackgroundWidget_a83b1cd7a2b60d82f3534bf2749742736}\label{classCustomBackgroundWidget_a83b1cd7a2b60d82f3534bf2749742736}} 
+\index{CustomBackgroundWidget@{CustomBackgroundWidget}!CustomBackgroundWidget@{CustomBackgroundWidget}}
+\index{CustomBackgroundWidget@{CustomBackgroundWidget}!CustomBackgroundWidget@{CustomBackgroundWidget}}
+\doxysubsubsection{\texorpdfstring{CustomBackgroundWidget()}{CustomBackgroundWidget()}}
+{\footnotesize\ttfamily Custom\+Background\+Widget\+::\+Custom\+Background\+Widget (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classCustomBackgroundWidget}{Custom\+Background\+Widget}} object. 
+
+Constructs a new \mbox{\hyperlink{classCustomBackgroundWidget}{Custom\+Background\+Widget}}.
+
+Initializes the widget with an optional parent widget and sets the initial offset for the animation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to the parent widget (default is nullptr).\\
+\hline
+\end{DoxyParams}
+Initializes the widget and sets the initial offset for the animation. Also creates a QTimer that updates the widget periodically to animate the heartbeat wave.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to the parent widget. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/custombackgroundwidget.\+h\item 
+GUI/\mbox{\hyperlink{custombackgroundwidget_8cpp}{custombackgroundwidget.\+cpp}}\end{DoxyCompactItemize}

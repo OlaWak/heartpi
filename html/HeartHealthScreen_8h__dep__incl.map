@@ -1,0 +1,10 @@
+<map id="GUI/HeartHealthScreen.h" name="GUI/HeartHealthScreen.h">
+<area shape="rect" id="node1" title="Declaration of the HeartHealthScreen widget." alt="" coords="306,5,491,32"/>
+<area shape="rect" id="node2" href="$HeartHealthScreen_8cpp.html" title="Implements the HeartHealthScreen widget for displaying heart health results and live charts." alt="" coords="5,80,205,107"/>
+<area shape="rect" id="node3" href="$mainwindow_8h_source.html" title=" " alt="" coords="229,80,373,107"/>
+<area shape="rect" id="node6" href="$SurveyFormScreen_8cpp.html" title="Implements the SurveyFormScreen widget for collecting heart health survey data." alt="" coords="398,80,597,107"/>
+<area shape="rect" id="node7" href="$WelcomeScreen_8h.html" title="Declaration of the WelcomeScreen widget." alt="" coords="621,80,787,107"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Main entry point of the application." alt="" coords="246,155,357,181"/>
+<area shape="rect" id="node5" href="$mainwindow_8cpp.html" title="Implements the MainWindow class which serves as the central hub for the HeartPi application." alt="" coords="406,155,565,181"/>
+<area shape="rect" id="node8" href="$WelcomeScreen_8cpp.html" title="Implements the WelcomeScreen widget which displays a personalized welcome message,..." alt="" coords="613,155,795,181"/>
+</map>

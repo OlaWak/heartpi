@@ -1,0 +1,158 @@
+\hypertarget{classNotifyCaregiverScreen}{}\doxysection{Notify\+Caregiver\+Screen Class Reference}
+\label{classNotifyCaregiverScreen}\index{NotifyCaregiverScreen@{NotifyCaregiverScreen}}
+
+
+A widget for sending alert emails to caregivers.  
+
+
+
+
+{\ttfamily \#include $<$Notify\+Caregiver\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Notify\+Caregiver\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classNotifyCaregiverScreen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Notify\+Caregiver\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classNotifyCaregiverScreen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNotifyCaregiverScreen_a8085e0558c8fcd115d3d5767ab38e040}{Notify\+Caregiver\+Screen}} (QStacked\+Widget $\ast$stacked\+Widget, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classNotifyCaregiverScreen}{Notify\+Caregiver\+Screen}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classNotifyCaregiverScreen_af7dd92e9eec1fa3331877f469510714e}{attempt\+Send\+Alert}} ()
+\begin{DoxyCompactList}\small\item\em Attempts to send an alert email to the caregiver. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNotifyCaregiverScreen_a6f288cb7286efa70acd9d7f6b797d476}{go\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Navigates back to the previous screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classNotifyCaregiverScreen_a5bdc1c0d7bf9b8730bc4882f4d627cda}{verify\+Credentials}} (const QString \&username, const QString \&password)
+\begin{DoxyCompactList}\small\item\em Verifies the provided credentials against the CSV file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNotifyCaregiverScreen_ad54ce815ddd9cd62b8df6b722cf460c8}{load\+Accounts}} ()
+\begin{DoxyCompactList}\small\item\em Loads available user accounts from the CSV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNotifyCaregiverScreen_afc9f4106cbb97e374e575aefebc1167a}\label{classNotifyCaregiverScreen_afc9f4106cbb97e374e575aefebc1167a}} 
+QStacked\+Widget $\ast$ {\bfseries stacked\+Widget}
+\item 
+\mbox{\Hypertarget{classNotifyCaregiverScreen_a152dffbeb125e368bff745b9897ade4a}\label{classNotifyCaregiverScreen_a152dffbeb125e368bff745b9897ade4a}} 
+QCombo\+Box $\ast$ {\bfseries account\+Combo\+Box}
+\item 
+\mbox{\Hypertarget{classNotifyCaregiverScreen_a08d83b03696b1e9f5009666a2425b281}\label{classNotifyCaregiverScreen_a08d83b03696b1e9f5009666a2425b281}} 
+QLine\+Edit $\ast$ {\bfseries password\+Field}
+\item 
+\mbox{\Hypertarget{classNotifyCaregiverScreen_a87abebdc2da652c35a1cca1112bf6b83}\label{classNotifyCaregiverScreen_a87abebdc2da652c35a1cca1112bf6b83}} 
+QLine\+Edit $\ast$ {\bfseries recipient\+Email\+Field}
+\item 
+\mbox{\Hypertarget{classNotifyCaregiverScreen_ab3bc913a13c229c3167ad904a3558094}\label{classNotifyCaregiverScreen_ab3bc913a13c229c3167ad904a3558094}} 
+QPush\+Button $\ast$ {\bfseries send\+Alert\+Button}
+\item 
+\mbox{\Hypertarget{classNotifyCaregiverScreen_ad1f04105ee8a090448b856bafe5194e1}\label{classNotifyCaregiverScreen_ad1f04105ee8a090448b856bafe5194e1}} 
+QPush\+Button $\ast$ {\bfseries back\+Button}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A widget for sending alert emails to caregivers. 
+
+The \mbox{\hyperlink{classNotifyCaregiverScreen}{Notify\+Caregiver\+Screen}} class allows a user to send a Heart\+Pi alert email by selecting their account, entering a password, and specifying a recipient email address. It loads available accounts from a CSV file and verifies the provided credentials. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNotifyCaregiverScreen_a8085e0558c8fcd115d3d5767ab38e040}\label{classNotifyCaregiverScreen_a8085e0558c8fcd115d3d5767ab38e040}} 
+\index{NotifyCaregiverScreen@{NotifyCaregiverScreen}!NotifyCaregiverScreen@{NotifyCaregiverScreen}}
+\index{NotifyCaregiverScreen@{NotifyCaregiverScreen}!NotifyCaregiverScreen@{NotifyCaregiverScreen}}
+\doxysubsubsection{\texorpdfstring{NotifyCaregiverScreen()}{NotifyCaregiverScreen()}}
+{\footnotesize\ttfamily Notify\+Caregiver\+Screen\+::\+Notify\+Caregiver\+Screen (\begin{DoxyParamCaption}\item[{QStacked\+Widget $\ast$}]{stacked\+Widget,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classNotifyCaregiverScreen}{Notify\+Caregiver\+Screen}} object. 
+
+Sets up the UI elements including title label, account drop-\/down, password and recipient email fields, and the send/back buttons. Connects button clicks to the corresponding slots.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget} & Pointer to the QStacked\+Widget used for screen navigation. \\
+\hline
+{\em parent} & Pointer to the parent QWidget. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNotifyCaregiverScreen_af7dd92e9eec1fa3331877f469510714e}\label{classNotifyCaregiverScreen_af7dd92e9eec1fa3331877f469510714e}} 
+\index{NotifyCaregiverScreen@{NotifyCaregiverScreen}!attemptSendAlert@{attemptSendAlert}}
+\index{attemptSendAlert@{attemptSendAlert}!NotifyCaregiverScreen@{NotifyCaregiverScreen}}
+\doxysubsubsection{\texorpdfstring{attemptSendAlert}{attemptSendAlert}}
+{\footnotesize\ttfamily void Notify\+Caregiver\+Screen\+::attempt\+Send\+Alert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Attempts to send an alert email to the caregiver. 
+
+Validates user input, verifies credentials, and then fetches heart rate data from \char`\"{}userdata.\+csv\char`\"{}. Computes average and latest heart rate, determines the risk level, composes the email subject and body, and sends the email using the \mbox{\hyperlink{classEmailSender}{Email\+Sender}} class. Displays appropriate messages based on success or failure. \mbox{\Hypertarget{classNotifyCaregiverScreen_a6f288cb7286efa70acd9d7f6b797d476}\label{classNotifyCaregiverScreen_a6f288cb7286efa70acd9d7f6b797d476}} 
+\index{NotifyCaregiverScreen@{NotifyCaregiverScreen}!goBack@{goBack}}
+\index{goBack@{goBack}!NotifyCaregiverScreen@{NotifyCaregiverScreen}}
+\doxysubsubsection{\texorpdfstring{goBack}{goBack}}
+{\footnotesize\ttfamily void Notify\+Caregiver\+Screen\+::go\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Navigates back to the previous screen. 
+
+Sets the current index of the stacked widget to 0 (assumed to be the main menu). \mbox{\Hypertarget{classNotifyCaregiverScreen_ad54ce815ddd9cd62b8df6b722cf460c8}\label{classNotifyCaregiverScreen_ad54ce815ddd9cd62b8df6b722cf460c8}} 
+\index{NotifyCaregiverScreen@{NotifyCaregiverScreen}!loadAccounts@{loadAccounts}}
+\index{loadAccounts@{loadAccounts}!NotifyCaregiverScreen@{NotifyCaregiverScreen}}
+\doxysubsubsection{\texorpdfstring{loadAccounts()}{loadAccounts()}}
+{\footnotesize\ttfamily void Notify\+Caregiver\+Screen\+::load\+Accounts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads available user accounts from the CSV file. 
+
+Opens \char`\"{}userdata.\+csv\char`\"{}, reads registration rows (which have exactly 2 columns\+: username and password), and populates the account drop-\/down with unique usernames. \mbox{\Hypertarget{classNotifyCaregiverScreen_a5bdc1c0d7bf9b8730bc4882f4d627cda}\label{classNotifyCaregiverScreen_a5bdc1c0d7bf9b8730bc4882f4d627cda}} 
+\index{NotifyCaregiverScreen@{NotifyCaregiverScreen}!verifyCredentials@{verifyCredentials}}
+\index{verifyCredentials@{verifyCredentials}!NotifyCaregiverScreen@{NotifyCaregiverScreen}}
+\doxysubsubsection{\texorpdfstring{verifyCredentials()}{verifyCredentials()}}
+{\footnotesize\ttfamily bool Notify\+Caregiver\+Screen\+::verify\+Credentials (\begin{DoxyParamCaption}\item[{const QString \&}]{username,  }\item[{const QString \&}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Verifies the provided credentials against the CSV file. 
+
+Reads \char`\"{}userdata.\+csv\char`\"{} and checks registration rows for a match with the provided username and password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username to verify. \\
+\hline
+{\em password} & The password to verify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the credentials are valid; false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/\mbox{\hyperlink{NotifyCaregiverScreen_8h}{Notify\+Caregiver\+Screen.\+h}}\item 
+GUI/\mbox{\hyperlink{NotifyCaregiverScreen_8cpp}{Notify\+Caregiver\+Screen.\+cpp}}\end{DoxyCompactItemize}

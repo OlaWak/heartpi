@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['saveuserdata_72',['saveUserData',['../classSurveyScreen.html#a996ffb556a6cee8af35890c651a2b503',1,'SurveyScreen']]],
+  ['sendemail_73',['sendEmail',['../classEmailSender.html#a3f11a5360b244cd559dc698e60d29492',1,'EmailSender']]],
+  ['setagegroup_74',['setAgeGroup',['../classFamilyHealth.html#a3121186abb1d822d892c52ea577acd3a',1,'FamilyHealth']]],
+  ['setdiettype_75',['setDietType',['../classFamilyHealth.html#ae2510ee1e167f4f83d26d25fa4041be0',1,'FamilyHealth']]],
+  ['setexercisefrequency_76',['setExerciseFrequency',['../classFamilyHealth.html#afd4b7012d069b99516012a7a381a058c',1,'FamilyHealth']]],
+  ['setfamilydiseasehistory_77',['setFamilyDiseaseHistory',['../classFamilyHealth.html#a703866498fe42515f3979427180f16e1',1,'FamilyHealth']]],
+  ['setgender_78',['setGender',['../classFamilyHealth.html#a08e9f0cb95c00e21c5bd1bd4a7ccb5ea',1,'FamilyHealth']]],
+  ['setissmoker_79',['setIsSmoker',['../classFamilyHealth.html#a81a7916f2234cabff90a52fd257ecd75',1,'FamilyHealth']]],
+  ['setsleephours_80',['setSleepHours',['../classFamilyHealth.html#ae7f88e33ef7cadf312c9912bbbed6676',1,'FamilyHealth']]],
+  ['setuplivechart_81',['setupLiveChart',['../classHeartHealthScreen.html#a0893376a338ee9cb5b81f3f04704ce1c',1,'HeartHealthScreen']]],
+  ['setupmainmenu_82',['setupMainMenu',['../classMainWindow.html#a5d3f8231e04505de3d2855d69b273b60',1,'MainWindow']]],
+  ['setupui_83',['setupUI',['../classResultsLoginScreen.html#a07eb5d67f17b83a92e61345c59fa48ca',1,'ResultsLoginScreen::setupUI()'],['../classHeartHealthScreen.html#af4b2d3c2174a1c06932fdfc7b0675c81',1,'HeartHealthScreen::setupUI()']]],
+  ['setuser_84',['setUser',['../classHeartHealthScreen.html#a10709e4d68b7f7a8f4329b11dfff08a4',1,'HeartHealthScreen']]],
+  ['showresultsforuser_85',['showResultsForUser',['../classHeartHealthScreen.html#aa54adcb6bbbd032e5ca14a585d7e12fa',1,'HeartHealthScreen']]],
+  ['sleephours_86',['sleepHours',['../classFamilyHealth.html#ac416b59218cc43db7bfd0f869e8ed1ae',1,'FamilyHealth']]],
+  ['stackedwidget_87',['stackedWidget',['../classHeartHealthScreen.html#af70c078097800417623bffcca549002c',1,'HeartHealthScreen::stackedWidget()'],['../classMainWindow.html#aa86720a51d3246a6dc316d51488dcb15',1,'MainWindow::stackedWidget()']]],
+  ['submitsurvey_88',['submitSurvey',['../classSurveyFormScreen.html#abf887b70ac5cb37cc76367107821d0cd',1,'SurveyFormScreen']]],
+  ['surveyformscreen_89',['SurveyFormScreen',['../classSurveyFormScreen.html#a25e8e5eebef1bfd36a5d417d1290aada',1,'SurveyFormScreen::SurveyFormScreen()'],['../classSurveyFormScreen.html',1,'SurveyFormScreen']]],
+  ['surveyformscreen_2ecpp_90',['SurveyFormScreen.cpp',['../SurveyFormScreen_8cpp.html',1,'']]],
+  ['surveyformscreen_2eh_91',['SurveyFormScreen.h',['../SurveyFormScreen_8h.html',1,'']]],
+  ['surveyscreen_92',['surveyScreen',['../classMainWindow.html#a99d2424896546e2c038d7348e28936fa',1,'MainWindow']]],
+  ['surveyscreen_93',['SurveyScreen',['../classSurveyScreen.html#a68e85c840dbdd5d6baa644fd7a3331bc',1,'SurveyScreen::SurveyScreen()'],['../classSurveyScreen.html',1,'SurveyScreen']]],
+  ['surveyscreen_2ecpp_94',['SurveyScreen.cpp',['../SurveyScreen_8cpp.html',1,'']]],
+  ['surveyscreen_2eh_95',['SurveyScreen.h',['../SurveyScreen_8h.html',1,'']]]
+];

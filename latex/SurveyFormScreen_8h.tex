@@ -1,0 +1,46 @@
+\hypertarget{SurveyFormScreen_8h}{}\doxysection{GUI/\+Survey\+Form\+Screen.h File Reference}
+\label{SurveyFormScreen_8h}\index{GUI/SurveyFormScreen.h@{GUI/SurveyFormScreen.h}}
+
+
+Declaration of the \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} widget.  
+
+
+{\ttfamily \#include \char`\"{}custombackgroundwidget.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Family\+Health.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QVBox\+Layout$>$}\newline
+{\ttfamily \#include $<$QLabel$>$}\newline
+{\ttfamily \#include $<$QPush\+Button$>$}\newline
+{\ttfamily \#include $<$QCombo\+Box$>$}\newline
+{\ttfamily \#include $<$QStacked\+Widget$>$}\newline
+Include dependency graph for Survey\+Form\+Screen.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SurveyFormScreen_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SurveyFormScreen_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}}
+\begin{DoxyCompactList}\small\item\em A widget for collecting heart health survey data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaration of the \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} widget. 
+
+This file declares the \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} class, which provides a user interface for collecting heart health survey data. It displays a series of questions using combo boxes, collects the responses, and packages the data into a \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object. Once the survey is submitted, a signal is emitted containing the collected data.
+
+\begin{DoxyNote}{Note}
+This widget is intended to be used within a QStacked\+Widget for screen navigation.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

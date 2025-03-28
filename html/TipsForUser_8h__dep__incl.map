@@ -1,0 +1,6 @@
+<map id="GUI/TipsForUser.h" name="GUI/TipsForUser.h">
+<area shape="rect" id="node1" title="Declaration of the TipsForUser widget." alt="" coords="195,5,334,32"/>
+<area shape="rect" id="node2" href="$mainwindow_8cpp.html" title="Implements the MainWindow class which serves as the central hub for the HeartPi application." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node3" href="$TipsForUser_8cpp.html" title="Implements the TipsForUser widget that displays curated health tips for a healthier heart." alt="" coords="188,80,341,107"/>
+<area shape="rect" id="node4" href="$WelcomeScreen_8cpp.html" title="Implements the WelcomeScreen widget which displays a personalized welcome message,..." alt="" coords="366,80,547,107"/>
+</map>

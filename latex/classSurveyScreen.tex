@@ -1,0 +1,116 @@
+\hypertarget{classSurveyScreen}{}\doxysection{Survey\+Screen Class Reference}
+\label{classSurveyScreen}\index{SurveyScreen@{SurveyScreen}}
+
+
+A widget for user registration/login for the heart health survey.  
+
+
+
+
+{\ttfamily \#include $<$Survey\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Survey\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classSurveyScreen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Survey\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classSurveyScreen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSurveyScreen_adc8bb4f03c7c7c6d3dc3dbfcdfc60a09}\label{classSurveyScreen_adc8bb4f03c7c7c6d3dc3dbfcdfc60a09}} 
+void {\bfseries go\+Back\+To\+Main} ()
+\item 
+\mbox{\Hypertarget{classSurveyScreen_a4e4d3e92f405244c13cb8033f9ed73d0}\label{classSurveyScreen_a4e4d3e92f405244c13cb8033f9ed73d0}} 
+void {\bfseries survey\+Login\+Successful} (const QString \&username)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSurveyScreen_a68e85c840dbdd5d6baa644fd7a3331bc}{Survey\+Screen}} (QStacked\+Widget $\ast$stacked\+Widget\+Ref, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSurveyScreen_a0442a2b2787a93cb2e5fcb1b4f832282}\label{classSurveyScreen_a0442a2b2787a93cb2e5fcb1b4f832282}} 
+void {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSurveyScreen_a996ffb556a6cee8af35890c651a2b503}{save\+User\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Saves the user data entered in the survey screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSurveyScreen_a5e1d010939b23df9d420570298f76519}\label{classSurveyScreen_a5e1d010939b23df9d420570298f76519}} 
+QLine\+Edit $\ast$ {\bfseries username\+Field}
+\item 
+\mbox{\Hypertarget{classSurveyScreen_a0d96908b6f6f608513e14fd9b46fc067}\label{classSurveyScreen_a0d96908b6f6f608513e14fd9b46fc067}} 
+QLine\+Edit $\ast$ {\bfseries password\+Field}
+\item 
+\mbox{\Hypertarget{classSurveyScreen_ad3e6d0d12c911d79b8c8ebdd1a8a06c5}\label{classSurveyScreen_ad3e6d0d12c911d79b8c8ebdd1a8a06c5}} 
+QPush\+Button $\ast$ {\bfseries start\+Survey\+Button}
+\item 
+\mbox{\Hypertarget{classSurveyScreen_a2b742abf8e0302ceddc89720013fec82}\label{classSurveyScreen_a2b742abf8e0302ceddc89720013fec82}} 
+QPush\+Button $\ast$ {\bfseries back\+Button}
+\item 
+\mbox{\Hypertarget{classSurveyScreen_a363bd1deb2554c7576ba19121d7de14b}\label{classSurveyScreen_a363bd1deb2554c7576ba19121d7de14b}} 
+QStacked\+Widget $\ast$ {\bfseries stacked\+Widget}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A widget for user registration/login for the heart health survey. 
+
+The \mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} class provides input fields for a username and password, along with buttons to start the survey or go back to the main screen. It validates the inputs, saves user data to a CSV file, and emits a signal upon successful registration. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSurveyScreen_a68e85c840dbdd5d6baa644fd7a3331bc}\label{classSurveyScreen_a68e85c840dbdd5d6baa644fd7a3331bc}} 
+\index{SurveyScreen@{SurveyScreen}!SurveyScreen@{SurveyScreen}}
+\index{SurveyScreen@{SurveyScreen}!SurveyScreen@{SurveyScreen}}
+\doxysubsubsection{\texorpdfstring{SurveyScreen()}{SurveyScreen()}}
+{\footnotesize\ttfamily Survey\+Screen\+::\+Survey\+Screen (\begin{DoxyParamCaption}\item[{QStacked\+Widget $\ast$}]{stacked\+Widget\+Ref,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} object. 
+
+Initializes the \mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} widget by setting up the UI elements such as labels, text fields, and buttons. The widget is centered using a QVBox\+Layout and connects the start and back buttons to their respective slots.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget used for screen navigation. \\
+\hline
+{\em parent} & Pointer to the parent widget (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSurveyScreen_a996ffb556a6cee8af35890c651a2b503}\label{classSurveyScreen_a996ffb556a6cee8af35890c651a2b503}} 
+\index{SurveyScreen@{SurveyScreen}!saveUserData@{saveUserData}}
+\index{saveUserData@{saveUserData}!SurveyScreen@{SurveyScreen}}
+\doxysubsubsection{\texorpdfstring{saveUserData}{saveUserData}}
+{\footnotesize\ttfamily void Survey\+Screen\+::save\+User\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Saves the user data entered in the survey screen. 
+
+Validates the input fields, checks the user data against a CSV file, and saves new user data if valid. Emits the survey\+Login\+Successful signal on success. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/\mbox{\hyperlink{SurveyScreen_8h}{Survey\+Screen.\+h}}\item 
+GUI/\mbox{\hyperlink{SurveyScreen_8cpp}{Survey\+Screen.\+cpp}}\end{DoxyCompactItemize}

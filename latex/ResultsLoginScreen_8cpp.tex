@@ -1,0 +1,34 @@
+\hypertarget{ResultsLoginScreen_8cpp}{}\doxysection{GUI/\+Results\+Login\+Screen.cpp File Reference}
+\label{ResultsLoginScreen_8cpp}\index{GUI/ResultsLoginScreen.cpp@{GUI/ResultsLoginScreen.cpp}}
+
+
+Implements the \mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} widget for user login to view previous results.  
+
+
+{\ttfamily \#include \char`\"{}Results\+Login\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QVBox\+Layout$>$}\newline
+{\ttfamily \#include $<$QLabel$>$}\newline
+{\ttfamily \#include $<$QFile$>$}\newline
+{\ttfamily \#include $<$QText\+Stream$>$}\newline
+{\ttfamily \#include $<$QMessage\+Box$>$}\newline
+{\ttfamily \#include $<$QSet$>$}\newline
+Include dependency graph for Results\+Login\+Screen.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ResultsLoginScreen_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} widget for user login to view previous results. 
+
+This file defines the \mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} class methods. The widget provides a user interface for users to log in and view their previous results. It loads available account names from a CSV file, validates the entered password based on certain rules, and emits a signal upon successful login.
+
+\begin{DoxyNote}{Note}
+The CSV file \char`\"{}userdata.\+csv\char`\"{} is used for both registration data (two columns\+: username and password) and heart rate data.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

@@ -1,0 +1,432 @@
+\hypertarget{classFamilyHealth}{}\doxysection{Family\+Health Class Reference}
+\label{classFamilyHealth}\index{FamilyHealth@{FamilyHealth}}
+
+
+Holds personal and family health data.  
+
+
+
+
+{\ttfamily \#include $<$Family\+Health.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFamilyHealth_aeb405d940dd33f338e1883cf6d721b73}{Family\+Health}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFamilyHealth_a27df48f8f77528f5e630cb820f08e83b}{gather\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Gathers health-\/related information from the user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFamilyHealth_a573ca7180cccfbebdc9cc6a57e9254df}{get\+Age\+Group}} () const
+\begin{DoxyCompactList}\small\item\em Gets the age group of the user. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFamilyHealth_a176d876d32b3c112b51b4bd398083d76}{get\+Gender}} () const
+\begin{DoxyCompactList}\small\item\em Gets the gender of the user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFamilyHealth_ade6acd189f00fe9661d2da93d9dc2d59}{get\+Sleep\+Hours}} () const
+\begin{DoxyCompactList}\small\item\em Gets the sleep hours selection. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFamilyHealth_aa8fc5fad394616bbfc720637b6d9b3e8}{get\+Exercise\+Frequency}} () const
+\begin{DoxyCompactList}\small\item\em Gets the exercise frequency. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFamilyHealth_ac8771736d50e7267b47ce1645e9709f2}{get\+Diet\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Gets the diet type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFamilyHealth_a1c8eadef3c0589b9c76c7c6e7ee52ea9}{get\+Is\+Smoker}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the user is a smoker. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFamilyHealth_aac04a6d6a6c9689997de382404f4dd1e}{has\+Family\+Disease}} (int disease\+Index) const
+\begin{DoxyCompactList}\small\item\em Checks if a specific disease is present in the family\textquotesingle{}s health history. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFamilyHealth_a76ab0a07e18708204ce4c47382aa53b1}{get\+Family\+History\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of entries in the family disease history. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classFamilyHealth_ac77e837fa4be2fc73f238af16390d4a6}{get\+Family\+Diseases}} () const
+\begin{DoxyCompactList}\small\item\em Gets a constant reference to the vector of family disease names. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFamilyHealth_a3121186abb1d822d892c52ea577acd3a}{set\+Age\+Group}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s age group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFamilyHealth_a08e9f0cb95c00e21c5bd1bd4a7ccb5ea}{set\+Gender}} (bool value)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s gender. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFamilyHealth_ae7f88e33ef7cadf312c9912bbbed6676}{set\+Sleep\+Hours}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s sleep hours category. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFamilyHealth_afd4b7012d069b99516012a7a381a058c}{set\+Exercise\+Frequency}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s exercise frequency. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFamilyHealth_ae2510ee1e167f4f83d26d25fa4041be0}{set\+Diet\+Type}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s diet type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFamilyHealth_a81a7916f2234cabff90a52fd257ecd75}{set\+Is\+Smoker}} (bool value)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s smoking status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFamilyHealth_a703866498fe42515f3979427180f16e1}{set\+Family\+Disease\+History}} (int index, bool value)
+\begin{DoxyCompactList}\small\item\em Sets a specific family disease history entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classFamilyHealth_a6057d2bcb4cdce3d346096a384443e0a}{age\+Group}}
+\item 
+bool \mbox{\hyperlink{classFamilyHealth_adf20e1df3bf4ae533229425c8cebdd5c}{gender}}
+\item 
+int \mbox{\hyperlink{classFamilyHealth_ac416b59218cc43db7bfd0f869e8ed1ae}{sleep\+Hours}}
+\item 
+int \mbox{\hyperlink{classFamilyHealth_a973a833f478a1be08f358a9720b5a7b4}{exercise\+Frequency}}
+\item 
+int \mbox{\hyperlink{classFamilyHealth_ad7a2fd972b7230305d3b6d54ea0832d7}{diet\+Type}}
+\item 
+bool \mbox{\hyperlink{classFamilyHealth_ad386226301869ff310ac969719a17f31}{is\+Smoker}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classFamilyHealth_ad330f060902712027e8ff3019a58107f}{family\+Diseases}}
+\item 
+std\+::vector$<$ bool $>$ \mbox{\hyperlink{classFamilyHealth_acd4c0251fc7af78b50543cbe2014a4a7}{family\+Diseases\+History}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds personal and family health data. 
+
+The \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} class collects and stores information regarding the user\textquotesingle{}s health and family medical history. It provides methods for gathering input interactively and for retrieving various health metrics. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFamilyHealth_aeb405d940dd33f338e1883cf6d721b73}\label{classFamilyHealth_aeb405d940dd33f338e1883cf6d721b73}} 
+\index{FamilyHealth@{FamilyHealth}!FamilyHealth@{FamilyHealth}}
+\index{FamilyHealth@{FamilyHealth}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{FamilyHealth()}{FamilyHealth()}}
+{\footnotesize\ttfamily Family\+Health\+::\+Family\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object. 
+
+Initializes the family\+Diseases vector with predefined disease names and sets the family\+Diseases\+History vector to default values (false). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFamilyHealth_a27df48f8f77528f5e630cb820f08e83b}\label{classFamilyHealth_a27df48f8f77528f5e630cb820f08e83b}} 
+\index{FamilyHealth@{FamilyHealth}!gatherInfo@{gatherInfo}}
+\index{gatherInfo@{gatherInfo}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{gatherInfo()}{gatherInfo()}}
+{\footnotesize\ttfamily void Family\+Health\+::gather\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gathers health-\/related information from the user. 
+
+Prompts the user to enter various health parameters including age, gender, sleep hours, exercise frequency, family disease history, diet type, and smoking status. The responses are stored in the object\textquotesingle{}s private members. \mbox{\Hypertarget{classFamilyHealth_a573ca7180cccfbebdc9cc6a57e9254df}\label{classFamilyHealth_a573ca7180cccfbebdc9cc6a57e9254df}} 
+\index{FamilyHealth@{FamilyHealth}!getAgeGroup@{getAgeGroup}}
+\index{getAgeGroup@{getAgeGroup}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{getAgeGroup()}{getAgeGroup()}}
+{\footnotesize\ttfamily int Family\+Health\+::get\+Age\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the age group of the user. 
+
+Retrieves the age group of the user.
+
+\begin{DoxyReturn}{Returns}
+int The selected age group.
+
+int The age group as provided by the user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFamilyHealth_ac8771736d50e7267b47ce1645e9709f2}\label{classFamilyHealth_ac8771736d50e7267b47ce1645e9709f2}} 
+\index{FamilyHealth@{FamilyHealth}!getDietType@{getDietType}}
+\index{getDietType@{getDietType}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{getDietType()}{getDietType()}}
+{\footnotesize\ttfamily int Family\+Health\+::get\+Diet\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the diet type. 
+
+Retrieves the diet type category of the user.
+
+\begin{DoxyReturn}{Returns}
+int The selected diet type category.
+
+int The diet type category. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFamilyHealth_aa8fc5fad394616bbfc720637b6d9b3e8}\label{classFamilyHealth_aa8fc5fad394616bbfc720637b6d9b3e8}} 
+\index{FamilyHealth@{FamilyHealth}!getExerciseFrequency@{getExerciseFrequency}}
+\index{getExerciseFrequency@{getExerciseFrequency}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{getExerciseFrequency()}{getExerciseFrequency()}}
+{\footnotesize\ttfamily int Family\+Health\+::get\+Exercise\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the exercise frequency. 
+
+Retrieves the exercise frequency category of the user.
+
+\begin{DoxyReturn}{Returns}
+int The selected exercise frequency category.
+
+int The exercise frequency category. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFamilyHealth_ac77e837fa4be2fc73f238af16390d4a6}\label{classFamilyHealth_ac77e837fa4be2fc73f238af16390d4a6}} 
+\index{FamilyHealth@{FamilyHealth}!getFamilyDiseases@{getFamilyDiseases}}
+\index{getFamilyDiseases@{getFamilyDiseases}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{getFamilyDiseases()}{getFamilyDiseases()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Family\+Health\+::get\+Family\+Diseases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets a constant reference to the vector of family disease names. 
+
+Retrieves a constant reference to the vector of family disease descriptions.
+
+\begin{DoxyReturn}{Returns}
+const std\+::vector$<$std\+::string$>$\& A reference to the vector containing the disease names.
+
+const std\+::vector$<$std\+::string$>$\& The vector containing descriptions of family diseases. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFamilyHealth_a76ab0a07e18708204ce4c47382aa53b1}\label{classFamilyHealth_a76ab0a07e18708204ce4c47382aa53b1}} 
+\index{FamilyHealth@{FamilyHealth}!getFamilyHistoryCount@{getFamilyHistoryCount}}
+\index{getFamilyHistoryCount@{getFamilyHistoryCount}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{getFamilyHistoryCount()}{getFamilyHistoryCount()}}
+{\footnotesize\ttfamily int Family\+Health\+::get\+Family\+History\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of entries in the family disease history. 
+
+Retrieves the count of entries in the family disease history.
+
+\begin{DoxyReturn}{Returns}
+int The count of family disease history entries.
+
+int The number of family disease history entries. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFamilyHealth_a176d876d32b3c112b51b4bd398083d76}\label{classFamilyHealth_a176d876d32b3c112b51b4bd398083d76}} 
+\index{FamilyHealth@{FamilyHealth}!getGender@{getGender}}
+\index{getGender@{getGender}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{getGender()}{getGender()}}
+{\footnotesize\ttfamily bool Family\+Health\+::get\+Gender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the gender of the user. 
+
+Retrieves the gender of the user.
+
+\begin{DoxyReturn}{Returns}
+bool Returns false for Female and true for Male.
+
+bool Returns false for female and true for male. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFamilyHealth_a1c8eadef3c0589b9c76c7c6e7ee52ea9}\label{classFamilyHealth_a1c8eadef3c0589b9c76c7c6e7ee52ea9}} 
+\index{FamilyHealth@{FamilyHealth}!getIsSmoker@{getIsSmoker}}
+\index{getIsSmoker@{getIsSmoker}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{getIsSmoker()}{getIsSmoker()}}
+{\footnotesize\ttfamily bool Family\+Health\+::get\+Is\+Smoker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks if the user is a smoker. 
+
+Determines if the user is a smoker.
+
+\begin{DoxyReturn}{Returns}
+bool Returns true if the user is a smoker, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFamilyHealth_ade6acd189f00fe9661d2da93d9dc2d59}\label{classFamilyHealth_ade6acd189f00fe9661d2da93d9dc2d59}} 
+\index{FamilyHealth@{FamilyHealth}!getSleepHours@{getSleepHours}}
+\index{getSleepHours@{getSleepHours}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{getSleepHours()}{getSleepHours()}}
+{\footnotesize\ttfamily int Family\+Health\+::get\+Sleep\+Hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the sleep hours selection. 
+
+Retrieves the sleep hours category selected by the user.
+
+\begin{DoxyReturn}{Returns}
+int The selected sleep hours category.
+
+int The sleep hours category. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFamilyHealth_aac04a6d6a6c9689997de382404f4dd1e}\label{classFamilyHealth_aac04a6d6a6c9689997de382404f4dd1e}} 
+\index{FamilyHealth@{FamilyHealth}!hasFamilyDisease@{hasFamilyDisease}}
+\index{hasFamilyDisease@{hasFamilyDisease}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{hasFamilyDisease()}{hasFamilyDisease()}}
+{\footnotesize\ttfamily bool Family\+Health\+::has\+Family\+Disease (\begin{DoxyParamCaption}\item[{int}]{disease\+Index }\end{DoxyParamCaption}) const}
+
+
+
+Checks if a specific disease is present in the family\textquotesingle{}s health history. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em disease\+Index} & The index of the disease to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true if the disease is present in the family history, false otherwise.
+\end{DoxyReturn}
+This function verifies if the disease corresponding to the given index is marked as present (true) in the family\+Diseases\+History vector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em disease\+Index} & The index of the disease to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true if the disease is present in the family history, false otherwise.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If the provided disease index is out of range, the function returns false. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classFamilyHealth_a3121186abb1d822d892c52ea577acd3a}\label{classFamilyHealth_a3121186abb1d822d892c52ea577acd3a}} 
+\index{FamilyHealth@{FamilyHealth}!setAgeGroup@{setAgeGroup}}
+\index{setAgeGroup@{setAgeGroup}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{setAgeGroup()}{setAgeGroup()}}
+{\footnotesize\ttfamily void Family\+Health\+::set\+Age\+Group (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s age group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The age group value to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFamilyHealth_ae2510ee1e167f4f83d26d25fa4041be0}\label{classFamilyHealth_ae2510ee1e167f4f83d26d25fa4041be0}} 
+\index{FamilyHealth@{FamilyHealth}!setDietType@{setDietType}}
+\index{setDietType@{setDietType}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{setDietType()}{setDietType()}}
+{\footnotesize\ttfamily void Family\+Health\+::set\+Diet\+Type (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s diet type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The diet type category value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFamilyHealth_afd4b7012d069b99516012a7a381a058c}\label{classFamilyHealth_afd4b7012d069b99516012a7a381a058c}} 
+\index{FamilyHealth@{FamilyHealth}!setExerciseFrequency@{setExerciseFrequency}}
+\index{setExerciseFrequency@{setExerciseFrequency}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{setExerciseFrequency()}{setExerciseFrequency()}}
+{\footnotesize\ttfamily void Family\+Health\+::set\+Exercise\+Frequency (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s exercise frequency. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The exercise frequency category value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFamilyHealth_a703866498fe42515f3979427180f16e1}\label{classFamilyHealth_a703866498fe42515f3979427180f16e1}} 
+\index{FamilyHealth@{FamilyHealth}!setFamilyDiseaseHistory@{setFamilyDiseaseHistory}}
+\index{setFamilyDiseaseHistory@{setFamilyDiseaseHistory}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{setFamilyDiseaseHistory()}{setFamilyDiseaseHistory()}}
+{\footnotesize\ttfamily void Family\+Health\+::set\+Family\+Disease\+History (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets a specific family disease history entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the disease to update. \\
+\hline
+{\em value} & True if the disease is present in family history, false otherwise.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the index is out of range, the function will not modify anything. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classFamilyHealth_a08e9f0cb95c00e21c5bd1bd4a7ccb5ea}\label{classFamilyHealth_a08e9f0cb95c00e21c5bd1bd4a7ccb5ea}} 
+\index{FamilyHealth@{FamilyHealth}!setGender@{setGender}}
+\index{setGender@{setGender}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{setGender()}{setGender()}}
+{\footnotesize\ttfamily void Family\+Health\+::set\+Gender (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s gender. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Boolean gender value (false\+: Female, true\+: Male). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFamilyHealth_a81a7916f2234cabff90a52fd257ecd75}\label{classFamilyHealth_a81a7916f2234cabff90a52fd257ecd75}} 
+\index{FamilyHealth@{FamilyHealth}!setIsSmoker@{setIsSmoker}}
+\index{setIsSmoker@{setIsSmoker}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{setIsSmoker()}{setIsSmoker()}}
+{\footnotesize\ttfamily void Family\+Health\+::set\+Is\+Smoker (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s smoking status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & True if the user is a smoker, false otherwise. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFamilyHealth_ae7f88e33ef7cadf312c9912bbbed6676}\label{classFamilyHealth_ae7f88e33ef7cadf312c9912bbbed6676}} 
+\index{FamilyHealth@{FamilyHealth}!setSleepHours@{setSleepHours}}
+\index{setSleepHours@{setSleepHours}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{setSleepHours()}{setSleepHours()}}
+{\footnotesize\ttfamily void Family\+Health\+::set\+Sleep\+Hours (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s sleep hours category. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The sleep hours category value. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFamilyHealth_a6057d2bcb4cdce3d346096a384443e0a}\label{classFamilyHealth_a6057d2bcb4cdce3d346096a384443e0a}} 
+\index{FamilyHealth@{FamilyHealth}!ageGroup@{ageGroup}}
+\index{ageGroup@{ageGroup}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{ageGroup}{ageGroup}}
+{\footnotesize\ttfamily int Family\+Health\+::age\+Group\hspace{0.3cm}{\ttfamily [private]}}
+
+Age group selection (e.\+g., 1\+: 18-\/24, 2\+: 25-\/34...) \mbox{\Hypertarget{classFamilyHealth_ad7a2fd972b7230305d3b6d54ea0832d7}\label{classFamilyHealth_ad7a2fd972b7230305d3b6d54ea0832d7}} 
+\index{FamilyHealth@{FamilyHealth}!dietType@{dietType}}
+\index{dietType@{dietType}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{dietType}{dietType}}
+{\footnotesize\ttfamily int Family\+Health\+::diet\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+Diet type selection \mbox{\Hypertarget{classFamilyHealth_a973a833f478a1be08f358a9720b5a7b4}\label{classFamilyHealth_a973a833f478a1be08f358a9720b5a7b4}} 
+\index{FamilyHealth@{FamilyHealth}!exerciseFrequency@{exerciseFrequency}}
+\index{exerciseFrequency@{exerciseFrequency}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{exerciseFrequency}{exerciseFrequency}}
+{\footnotesize\ttfamily int Family\+Health\+::exercise\+Frequency\hspace{0.3cm}{\ttfamily [private]}}
+
+Exercise frequency (1\+: never, etc.) \mbox{\Hypertarget{classFamilyHealth_ad330f060902712027e8ff3019a58107f}\label{classFamilyHealth_ad330f060902712027e8ff3019a58107f}} 
+\index{FamilyHealth@{FamilyHealth}!familyDiseases@{familyDiseases}}
+\index{familyDiseases@{familyDiseases}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{familyDiseases}{familyDiseases}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Family\+Health\+::family\+Diseases\hspace{0.3cm}{\ttfamily [private]}}
+
+Vector storing the disease names \mbox{\Hypertarget{classFamilyHealth_acd4c0251fc7af78b50543cbe2014a4a7}\label{classFamilyHealth_acd4c0251fc7af78b50543cbe2014a4a7}} 
+\index{FamilyHealth@{FamilyHealth}!familyDiseasesHistory@{familyDiseasesHistory}}
+\index{familyDiseasesHistory@{familyDiseasesHistory}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{familyDiseasesHistory}{familyDiseasesHistory}}
+{\footnotesize\ttfamily std\+::vector$<$bool$>$ Family\+Health\+::family\+Diseases\+History\hspace{0.3cm}{\ttfamily [private]}}
+
+Vector storing family disease responses (true if present) \mbox{\Hypertarget{classFamilyHealth_adf20e1df3bf4ae533229425c8cebdd5c}\label{classFamilyHealth_adf20e1df3bf4ae533229425c8cebdd5c}} 
+\index{FamilyHealth@{FamilyHealth}!gender@{gender}}
+\index{gender@{gender}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{gender}{gender}}
+{\footnotesize\ttfamily bool Family\+Health\+::gender\hspace{0.3cm}{\ttfamily [private]}}
+
+Gender assigned at birth (false\+: Female, true\+: Male) \mbox{\Hypertarget{classFamilyHealth_ad386226301869ff310ac969719a17f31}\label{classFamilyHealth_ad386226301869ff310ac969719a17f31}} 
+\index{FamilyHealth@{FamilyHealth}!isSmoker@{isSmoker}}
+\index{isSmoker@{isSmoker}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{isSmoker}{isSmoker}}
+{\footnotesize\ttfamily bool Family\+Health\+::is\+Smoker\hspace{0.3cm}{\ttfamily [private]}}
+
+Smoking status (true if smoker, false otherwise) \mbox{\Hypertarget{classFamilyHealth_ac416b59218cc43db7bfd0f869e8ed1ae}\label{classFamilyHealth_ac416b59218cc43db7bfd0f869e8ed1ae}} 
+\index{FamilyHealth@{FamilyHealth}!sleepHours@{sleepHours}}
+\index{sleepHours@{sleepHours}!FamilyHealth@{FamilyHealth}}
+\doxysubsubsection{\texorpdfstring{sleepHours}{sleepHours}}
+{\footnotesize\ttfamily int Family\+Health\+::sleep\+Hours\hspace{0.3cm}{\ttfamily [private]}}
+
+Hours of sleep selection (1\+: less than 4 hours, 2\+: 4-\/5 hours, etc.) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{FamilyHealth_8h}{Family\+Health.\+h}}\item 
+\mbox{\hyperlink{FamilyHealth_8cpp}{Family\+Health.\+cpp}}\end{DoxyCompactItemize}

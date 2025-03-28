@@ -1,0 +1,6 @@
+<map id="WelcomeScreen" name="WelcomeScreen">
+<area shape="rect" id="node1" title="A widget that displays a personalized welcome message and heart health information." alt="" coords="45,247,171,273"/>
+<area shape="rect" id="node2" href="$classCustomBackgroundWidget.html" title="A widget with a custom background and animated heartbeat wave." alt="" coords="5,81,200,108"/>
+<area shape="rect" id="node4" href="$classHeartHealthScreen.html" title="A widget that displays heart health results and a live heart rate chart." alt="" coords="125,157,270,184"/>
+<area shape="rect" id="node3" title=" " alt="" coords="63,5,142,32"/>
+</map>

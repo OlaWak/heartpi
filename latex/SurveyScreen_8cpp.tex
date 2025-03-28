@@ -1,0 +1,31 @@
+\hypertarget{SurveyScreen_8cpp}{}\doxysection{GUI/\+Survey\+Screen.cpp File Reference}
+\label{SurveyScreen_8cpp}\index{GUI/SurveyScreen.cpp@{GUI/SurveyScreen.cpp}}
+
+
+Implements the \mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} widget for user registration and login.  
+
+
+{\ttfamily \#include \char`\"{}Surveyscreen.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QFile$>$}\newline
+{\ttfamily \#include $<$QText\+Stream$>$}\newline
+{\ttfamily \#include $<$QMessage\+Box$>$}\newline
+Include dependency graph for Survey\+Screen.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SurveyScreen_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} widget for user registration and login. 
+
+This file defines the \mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} class methods which provide an interface for new users to register or log in by entering a username and password. The widget validates the input, checks for existing usernames in a CSV file (\char`\"{}userdata.\+csv\char`\"{}), and saves new user data. Upon successful registration, it emits a signal indicating a successful survey login.
+
+\begin{DoxyNote}{Note}
+The CSV file stores user registration information, including a header line if the file is new.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

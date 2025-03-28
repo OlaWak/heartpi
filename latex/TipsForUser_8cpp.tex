@@ -1,0 +1,35 @@
+\hypertarget{TipsForUser_8cpp}{}\doxysection{GUI/\+Tips\+For\+User.cpp File Reference}
+\label{TipsForUser_8cpp}\index{GUI/TipsForUser.cpp@{GUI/TipsForUser.cpp}}
+
+
+Implements the \mbox{\hyperlink{classTipsForUser}{Tips\+For\+User}} widget that displays curated health tips for a healthier heart.  
+
+
+{\ttfamily \#include \char`\"{}Tips\+For\+User.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QVBox\+Layout$>$}\newline
+{\ttfamily \#include $<$QLabel$>$}\newline
+{\ttfamily \#include $<$QPush\+Button$>$}\newline
+{\ttfamily \#include $<$QFrame$>$}\newline
+{\ttfamily \#include $<$QScroll\+Area$>$}\newline
+{\ttfamily \#include $<$QPainter$>$}\newline
+{\ttfamily \#include $<$QFont$>$}\newline
+Include dependency graph for Tips\+For\+User.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TipsForUser_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classTipsForUser}{Tips\+For\+User}} widget that displays curated health tips for a healthier heart. 
+
+This file defines the constructor and paint\+Event() function for the \mbox{\hyperlink{classTipsForUser}{Tips\+For\+User}} widget. The widget displays various health tips organized into categories such as activity, nutrition, monitoring, and sleep \& stress. Tips are tailored based on the user\textquotesingle{}s risk level (\char`\"{}\+High\char`\"{}, \char`\"{}\+Moderate\char`\"{}, or other), and a scrollable layout is used to present the content. A back button is provided to navigate to the previous screen.
+
+\begin{DoxyNote}{Note}
+The widget\textquotesingle{}s background is painted with a custom linear gradient.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

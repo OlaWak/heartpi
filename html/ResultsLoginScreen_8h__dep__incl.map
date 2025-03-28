@@ -1,0 +1,7 @@
+<map id="GUI/ResultsLoginScreen.h" name="GUI/ResultsLoginScreen.h">
+<area shape="rect" id="node1" title="Declaration of the ResultsLoginScreen widget." alt="" coords="143,5,333,32"/>
+<area shape="rect" id="node2" href="$mainwindow_8h_source.html" title=" " alt="" coords="67,80,211,107"/>
+<area shape="rect" id="node5" href="$ResultsLoginScreen_8cpp.html" title="Implements the ResultsLoginScreen widget for user login to view previous results." alt="" coords="236,80,440,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Main entry point of the application." alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node4" href="$mainwindow_8cpp.html" title="Implements the MainWindow class which serves as the central hub for the HeartPi application." alt="" coords="140,155,299,181"/>
+</map>

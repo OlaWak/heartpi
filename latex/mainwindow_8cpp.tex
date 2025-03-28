@@ -1,0 +1,46 @@
+\hypertarget{mainwindow_8cpp}{}\doxysection{GUI/mainwindow.cpp File Reference}
+\label{mainwindow_8cpp}\index{GUI/mainwindow.cpp@{GUI/mainwindow.cpp}}
+
+
+Implements the \mbox{\hyperlink{classMainWindow}{Main\+Window}} class which serves as the central hub for the Heart\+Pi application.  
+
+
+{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}custombackgroundwidget.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Welcome\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tips\+For\+User.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Email\+Sender.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Notify\+Caregiver\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QVBox\+Layout$>$}\newline
+{\ttfamily \#include $<$QApplication$>$}\newline
+{\ttfamily \#include $<$QLabel$>$}\newline
+{\ttfamily \#include $<$QPixmap$>$}\newline
+{\ttfamily \#include $<$QFont\+Database$>$}\newline
+{\ttfamily \#include $<$QStacked\+Widget$>$}\newline
+{\ttfamily \#include $<$QPush\+Button$>$}\newline
+{\ttfamily \#include $<$QFrame$>$}\newline
+{\ttfamily \#include $<$QDialog$>$}\newline
+{\ttfamily \#include $<$QLine\+Edit$>$}\newline
+{\ttfamily \#include $<$QCombo\+Box$>$}\newline
+{\ttfamily \#include $<$QMap$>$}\newline
+{\ttfamily \#include $<$QMessage\+Box$>$}\newline
+Include dependency graph for mainwindow.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainwindow_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classMainWindow}{Main\+Window}} class which serves as the central hub for the Heart\+Pi application. 
+
+The \mbox{\hyperlink{classMainWindow}{Main\+Window}} sets up the main menu with an animated background and provides navigation between various screens\+: \mbox{\hyperlink{classSurveyScreen}{Survey\+Screen}} for user registration/login, \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} for survey input, \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} for displaying heart health statistics, \mbox{\hyperlink{classResultsLoginScreen}{Results\+Login\+Screen}} for viewing past results, \mbox{\hyperlink{classWelcomeScreen}{Welcome\+Screen}} for personalized greetings, and \mbox{\hyperlink{classNotifyCaregiverScreen}{Notify\+Caregiver\+Screen}} for sending alerts.
+
+\begin{DoxyNote}{Note}
+The application uses a QStacked\+Widget to manage screen transitions.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Ola Waked 
+\end{DoxyAuthor}

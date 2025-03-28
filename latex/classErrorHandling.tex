@@ -1,0 +1,111 @@
+\hypertarget{classErrorHandling}{}\doxysection{Error\+Handling Class Reference}
+\label{classErrorHandling}\index{ErrorHandling@{ErrorHandling}}
+
+
+Provides utilities for error logging and exception handling.  
+
+
+
+
+{\ttfamily \#include $<$Error\+Handling.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classErrorHandling_a23ab05f04037775d04b938a20bec3352}{log\+Error\+Message}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Logs an error message. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classErrorHandling_a0d28677ce61cb75401a41b2eb35ebbfa}{handle\+Exception}} (const std\+::exception \&e)
+\begin{DoxyCompactList}\small\item\em Handles exceptions by logging the exception message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std \+::string \mbox{\hyperlink{classErrorHandling_aa610549729bc00be19799507cefd7c9a}{get\+Current\+Timestamp}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides utilities for error logging and exception handling. 
+
+The \mbox{\hyperlink{classErrorHandling}{Error\+Handling}} class centralizes the logging of error messages and handling of exceptions. It includes methods to log error messages with a timestamp and to handle exceptions by logging the exception message. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classErrorHandling_aa610549729bc00be19799507cefd7c9a}\label{classErrorHandling_aa610549729bc00be19799507cefd7c9a}} 
+\index{ErrorHandling@{ErrorHandling}!getCurrentTimestamp@{getCurrentTimestamp}}
+\index{getCurrentTimestamp@{getCurrentTimestamp}!ErrorHandling@{ErrorHandling}}
+\doxysubsubsection{\texorpdfstring{getCurrentTimestamp()}{getCurrentTimestamp()}}
+{\footnotesize\ttfamily std\+::string Error\+Handling\+::get\+Current\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Retrieves the current timestamp. 
+
+Retrieves the current timestamp as a formatted string.
+
+Obtains the current system time and formats it as a human-\/readable string.
+
+\begin{DoxyReturn}{Returns}
+std\+::string The current timestamp.
+\end{DoxyReturn}
+Obtains the current system time and converts it into a human-\/readable string format using std\+::ctime.
+
+\begin{DoxyReturn}{Returns}
+std\+::string The current timestamp as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classErrorHandling_a0d28677ce61cb75401a41b2eb35ebbfa}\label{classErrorHandling_a0d28677ce61cb75401a41b2eb35ebbfa}} 
+\index{ErrorHandling@{ErrorHandling}!handleException@{handleException}}
+\index{handleException@{handleException}!ErrorHandling@{ErrorHandling}}
+\doxysubsubsection{\texorpdfstring{handleException()}{handleException()}}
+{\footnotesize\ttfamily void Error\+Handling\+::handle\+Exception (\begin{DoxyParamCaption}\item[{const std\+::exception \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Handles exceptions by logging the exception message. 
+
+This function logs the exception message, prefixed with \char`\"{}\+Exception caught\+: \char`\"{}, using the log\+Error\+Message method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The exception object that was caught. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classErrorHandling_a23ab05f04037775d04b938a20bec3352}\label{classErrorHandling_a23ab05f04037775d04b938a20bec3352}} 
+\index{ErrorHandling@{ErrorHandling}!logErrorMessage@{logErrorMessage}}
+\index{logErrorMessage@{logErrorMessage}!ErrorHandling@{ErrorHandling}}
+\doxysubsubsection{\texorpdfstring{logErrorMessage()}{logErrorMessage()}}
+{\footnotesize\ttfamily void Error\+Handling\+::log\+Error\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs an error message. 
+
+Logs an error message to standard error and a log file.
+
+Writes the provided error message to the standard error stream and appends it to a log file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The error message to be logged.\\
+\hline
+\end{DoxyParams}
+This function writes the provided error message to the standard error stream, prefixed with an \char`\"{}\mbox{[}\+ERROR!\mbox{]}\char`\"{} tag and the current timestamp. It also appends the error message to \char`\"{}\+Error\+\_\+log.\+txt\char`\"{} if the file can be opened.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The error message to log.\\
+\hline
+\end{DoxyParams}
+Handles exceptions by logging the exception message.
+
+Constructs an error message by prepending \char`\"{}\+Exception caught\+: \char`\"{} to the exception\textquotesingle{}s what() message, then logs the complete error message using \mbox{\hyperlink{classErrorHandling_a23ab05f04037775d04b938a20bec3352}{log\+Error\+Message()}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The exception object that was caught. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ErrorHandling_8h}{Error\+Handling.\+h}}\item 
+\mbox{\hyperlink{ErrorHandling_8cpp}{Error\+Handling.\+cpp}}\end{DoxyCompactItemize}

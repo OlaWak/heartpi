@@ -1,0 +1,105 @@
+---
+title: "README"
+output: pdf_document
+date: "2025-03-28"
+---
+
+
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# HeartPi
+
+**Course:** CS3307\
+**Team:** Team 40\
+**Team Members:**\
+- Yosra Alim\
+- Sena Debian\
+- Sarah Solaiman\
+- Ola Waked\
+- Shivali Sharma
+
+------------------------------------------------------------------------
+
+## Project Description
+
+Our HeartPi is a C++-based simulation project developed by Team 40 for
+the CS3307 course at Western University. The project simulates heart
+health monitoring by generating random sensor-like data (heart rate,
+blood pressure, cholesterol, ECG) based on user input collected via a
+family history and lifestyle survey. The application uses Qt and Qt
+Charts to provide an interactive GUI that displays the simulated data,
+logs output values, and sends email notifications when abnormal readings
+are detected. Although originally designed for Raspberry Pi hardware
+integration, HeartPi has evolved into a fully software-based simulation.
+
+------------------------------------------------------------------------
+
+## Features
+
+-   **Family History Survey:**\
+    Users complete an interactive survey detailing age, gender, sleep
+    habits, exercise frequency, diet type, family disease history, and
+    smoking status.
+
+-   **Random Data Generation:**\
+    A `RandomNumberGenerator` class simulates realistic heart-related
+    values (heart rate, systolic and diastolic blood pressure,
+    cholesterol, ECG) based on the survey results.
+
+-   **Risk Assessment:**\
+    The `Calculations` class computes a risk score using survey inputs
+    and categorizes the user’s heart health as low, moderate, or high
+    risk.
+
+-   **GUI Display:**\
+    The application features a Qt-based GUI with multiple screens:
+
+    -   **Main Menu:** Animated background and navigation buttons.
+    -   **Survey Screen & Survey Form:** Collect user data.
+    -   **Heart Health Screen:** Displays a live heart rate graph and
+        risk assessment using Qt Charts.
+    -   **Results Screen:** Shows previously logged data.
+    -   **Tips for User:** Offers health advice based on the risk level.
+
+-   **Data Logging:**\
+    Sensor outputs are recorded into a CSV file for historical review.
+
+-   **Notification System:**\
+    An integrated `EmailSender` class can send email alerts (via Gmail’s
+    SMTP) to notify caregivers if abnormal values are detected.
+
+-   **Doxygen Documentation:**\
+    The source codes (files) was documented using Doxygen-style
+    comments. Documentation can be generated to review class details and
+    method descriptions for each of the classes.
+
+-   **Project Management & Version Control:**\
+    Tasks and user stories were managed via Jira, and the source codes
+    (files) was maintained/shared using github.
+
+------------------------------------------------------------------------
+
+## Prerequisites
+
+### For macOS Users and Window Users
+
+Make sure you have the following installed before running the HeartPi
+program application:
+
+- Xcode 
+(For MacOS) 
+- Visual Studio or Visual Studio Code 
+(Install Visual Studio 2019 (or later) with C++ development
+tools, or Visual Studio Code with the appropriate toolchain (MinGW or
+MSVC)) 
+- Qt Framework 
+(Download and install Qt (version 5 or 6) from the
+Qt website. Make sure to add the Qt bin folder (which contains qmake) to
+your PATH) 
+- C++ Compiler (Use the MSVC compiler 
+(if using Visual
+Studio) or configure MinGW with Visual Studio Code)

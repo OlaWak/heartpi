@@ -1,0 +1,127 @@
+\hypertarget{classSurveyFormScreen}{}\doxysection{Survey\+Form\+Screen Class Reference}
+\label{classSurveyFormScreen}\index{SurveyFormScreen@{SurveyFormScreen}}
+
+
+A widget for collecting heart health survey data.  
+
+
+
+
+{\ttfamily \#include $<$Survey\+Form\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Survey\+Form\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classSurveyFormScreen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Survey\+Form\+Screen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classSurveyFormScreen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSurveyFormScreen_a66db206235771c25836f8df5c97a8ba9}\label{classSurveyFormScreen_a66db206235771c25836f8df5c97a8ba9}} 
+void {\bfseries survey\+Completed} (const \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} \&family\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSurveyFormScreen_a25e8e5eebef1bfd36a5d417d1290aada}{Survey\+Form\+Screen}} (QStacked\+Widget $\ast$stacked\+Widget\+Ref, const QString \&username, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSurveyFormScreen_a87e26b755e37f8d4044ac38d2e209002}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the survey form to its default state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSurveyFormScreen_abf887b70ac5cb37cc76367107821d0cd}{submit\+Survey}} ()
+\begin{DoxyCompactList}\small\item\em Submits the survey and processes the collected data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSurveyFormScreen_a131361fd1802418eb8415dba3a560ed8}\label{classSurveyFormScreen_a131361fd1802418eb8415dba3a560ed8}} 
+void {\bfseries setup\+UI} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSurveyFormScreen_afc918689307150f7fe3838f48b6f6487}\label{classSurveyFormScreen_afc918689307150f7fe3838f48b6f6487}} 
+\mbox{\hyperlink{classFamilyHealth}{Family\+Health}} {\bfseries family\+Data}
+\item 
+\mbox{\Hypertarget{classSurveyFormScreen_a7dd21d33387ac6d3e3d50ea2208cf6d0}\label{classSurveyFormScreen_a7dd21d33387ac6d3e3d50ea2208cf6d0}} 
+QVector$<$ QCombo\+Box $\ast$ $>$ {\bfseries question\+Fields}
+\item 
+\mbox{\Hypertarget{classSurveyFormScreen_a4f124c0f529fb6e3828fe089a414dfb7}\label{classSurveyFormScreen_a4f124c0f529fb6e3828fe089a414dfb7}} 
+QStacked\+Widget $\ast$ {\bfseries stacked\+Widget}
+\item 
+\mbox{\Hypertarget{classSurveyFormScreen_a86b88082e2f0949f5863d3f69a404153}\label{classSurveyFormScreen_a86b88082e2f0949f5863d3f69a404153}} 
+QString {\bfseries user}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A widget for collecting heart health survey data. 
+
+The \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} class displays survey questions related to the user\textquotesingle{}s health, such as age, gender, sleep hours, exercise frequency, family health history, diet type, and smoking status. After the user completes the survey, the widget emits a signal with the collected \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSurveyFormScreen_a25e8e5eebef1bfd36a5d417d1290aada}\label{classSurveyFormScreen_a25e8e5eebef1bfd36a5d417d1290aada}} 
+\index{SurveyFormScreen@{SurveyFormScreen}!SurveyFormScreen@{SurveyFormScreen}}
+\index{SurveyFormScreen@{SurveyFormScreen}!SurveyFormScreen@{SurveyFormScreen}}
+\doxysubsubsection{\texorpdfstring{SurveyFormScreen()}{SurveyFormScreen()}}
+{\footnotesize\ttfamily Survey\+Form\+Screen\+::\+Survey\+Form\+Screen (\begin{DoxyParamCaption}\item[{QStacked\+Widget $\ast$}]{stacked\+Widget\+Ref,  }\item[{const QString \&}]{username,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} object. 
+
+Initializes the \mbox{\hyperlink{classSurveyFormScreen}{Survey\+Form\+Screen}} widget with a reference to the QStacked\+Widget used for navigation, sets the current username, and calls setup\+UI() to initialize the user interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stacked\+Widget\+Ref} & Pointer to the QStacked\+Widget used for screen transitions. \\
+\hline
+{\em username} & The username of the current user. \\
+\hline
+{\em parent} & Pointer to the parent widget (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSurveyFormScreen_a87e26b755e37f8d4044ac38d2e209002}\label{classSurveyFormScreen_a87e26b755e37f8d4044ac38d2e209002}} 
+\index{SurveyFormScreen@{SurveyFormScreen}!reset@{reset}}
+\index{reset@{reset}!SurveyFormScreen@{SurveyFormScreen}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Survey\+Form\+Screen\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the survey form to its default state. 
+
+Resets each survey question (combo box) to its default selection (index 0), allowing the user to retake the survey if needed. \mbox{\Hypertarget{classSurveyFormScreen_abf887b70ac5cb37cc76367107821d0cd}\label{classSurveyFormScreen_abf887b70ac5cb37cc76367107821d0cd}} 
+\index{SurveyFormScreen@{SurveyFormScreen}!submitSurvey@{submitSurvey}}
+\index{submitSurvey@{submitSurvey}!SurveyFormScreen@{SurveyFormScreen}}
+\doxysubsubsection{\texorpdfstring{submitSurvey}{submitSurvey}}
+{\footnotesize\ttfamily void Survey\+Form\+Screen\+::submit\+Survey (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Submits the survey and processes the collected data. 
+
+Retrieves responses from the survey\textquotesingle{}s combo boxes, sets the corresponding values in a \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object, and emits the survey\+Completed signal with the collected data. It then finds the \mbox{\hyperlink{classHeartHealthScreen}{Heart\+Health\+Screen}} in the stacked widget to display the results. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/\mbox{\hyperlink{SurveyFormScreen_8h}{Survey\+Form\+Screen.\+h}}\item 
+GUI/\mbox{\hyperlink{SurveyFormScreen_8cpp}{Survey\+Form\+Screen.\+cpp}}\end{DoxyCompactItemize}

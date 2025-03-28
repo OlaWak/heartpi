@@ -1,0 +1,113 @@
+\hypertarget{Calculations_8h}{}\doxysection{Calculations.\+h File Reference}
+\label{Calculations_8h}\index{Calculations.h@{Calculations.h}}
+
+
+Header file for heart health assessment functionality.  
+
+
+{\ttfamily \#include \char`\"{}Family\+Health.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Calculations.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{Calculations_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Calculations_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{Calculations_8h_a2c7cb709fda60e88d60400f2e6de4966}{assess\+Heart\+Health}} (const \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} \&family, double \&heart\+Rate, double \&sys\+BP, double \&dias\+BP, double \&cholesterol, double \&ecg)
+\begin{DoxyCompactList}\small\item\em Assesses heart health and simulates sensor readings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for heart health assessment functionality. 
+
+This file declares the function prototype for assessing heart health by computing a risk score based on a \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object and simulating sensor readings such as heart rate, blood pressure, cholesterol, and ECG.
+
+\begin{DoxyAuthor}{Author}
+Sena Debian and Yosra Alim 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Calculations_8h_a2c7cb709fda60e88d60400f2e6de4966}\label{Calculations_8h_a2c7cb709fda60e88d60400f2e6de4966}} 
+\index{Calculations.h@{Calculations.h}!assessHeartHealth@{assessHeartHealth}}
+\index{assessHeartHealth@{assessHeartHealth}!Calculations.h@{Calculations.h}}
+\doxysubsubsection{\texorpdfstring{assessHeartHealth()}{assessHeartHealth()}}
+{\footnotesize\ttfamily std\+::string assess\+Heart\+Health (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} \&}]{family,  }\item[{double \&}]{heart\+Rate,  }\item[{double \&}]{sys\+BP,  }\item[{double \&}]{dias\+BP,  }\item[{double \&}]{cholesterol,  }\item[{double \&}]{ecg }\end{DoxyParamCaption})}
+
+
+
+Assesses heart health and simulates sensor readings. 
+
+This function computes a risk score based on various parameters contained in the \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object, including age, gender, sleep hours, exercise frequency, family disease history, diet type, and smoking status. It then simulates sensor readings for heart rate, systolic blood pressure, diastolic blood pressure, cholesterol, and ECG using randomly generated values based on the risk score thresholds.
+
+The thresholds for risk score are used as follows\+:
+\begin{DoxyItemize}
+\item Low risk\+: risk score $<$ 10
+\item Moderate risk\+: risk score $>$= 10 and $<$ 18
+\item High risk\+: risk score $>$= 18
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em family} & A reference to a \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object containing the user\textquotesingle{}s health data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em heart\+Rate} & A reference to a double where the simulated heart rate will be stored. \\
+\hline
+\mbox{\texttt{ out}}  & {\em sys\+BP} & A reference to a double where the simulated systolic blood pressure will be stored. \\
+\hline
+\mbox{\texttt{ out}}  & {\em dias\+BP} & A reference to a double where the simulated diastolic blood pressure will be stored. \\
+\hline
+\mbox{\texttt{ out}}  & {\em cholesterol} & A reference to a double where the simulated cholesterol level will be stored. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ecg} & A reference to a double where the simulated ECG reading will be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string message representing the assessed risk of heart disease.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The simulated sensor readings are based on predefined ranges corresponding to low, moderate, and high risk scores.
+\end{DoxyNote}
+Assesses heart health and simulates sensor readings.
+
+This function calculates a risk score based on various factors extracted from the \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object. It evaluates the age group, gender, sleep hours, exercise frequency, family disease history, diet type, and smoking status. The risk score is then used to simulate sensor readings for heart rate, systolic blood pressure, diastolic blood pressure, cholesterol, and ECG using randomly generated values.
+
+The thresholds for risk score are used as follows\+:
+\begin{DoxyItemize}
+\item Low risk\+: risk score $<$ 10
+\item Moderate risk\+: risk score $>$= 10 and $<$ 18
+\item High risk\+: risk score $>$= 18
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em family} & A reference to a \mbox{\hyperlink{classFamilyHealth}{Family\+Health}} object containing health-\/related information. \\
+\hline
+\mbox{\texttt{ out}}  & {\em heart\+Rate} & A reference to a double where the simulated heart rate will be stored. \\
+\hline
+\mbox{\texttt{ out}}  & {\em sys\+BP} & A reference to a double where the simulated systolic blood pressure will be stored. \\
+\hline
+\mbox{\texttt{ out}}  & {\em dias\+BP} & A reference to a double where the simulated diastolic blood pressure will be stored. \\
+\hline
+\mbox{\texttt{ out}}  & {\em cholesterol} & A reference to a double where the simulated cholesterol level will be stored. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ecg} & A reference to a double where the simulated ECG reading will be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string describing the assessed risk level for heart disease.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The simulation ranges vary depending on the computed risk score. 
+\end{DoxyNote}

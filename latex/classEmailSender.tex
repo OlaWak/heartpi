@@ -1,0 +1,72 @@
+\hypertarget{classEmailSender}{}\doxysection{Email\+Sender Class Reference}
+\label{classEmailSender}\index{EmailSender@{EmailSender}}
+
+
+Provides functionality for sending emails via Gmail\textquotesingle{}s SMTP server.  
+
+
+
+
+{\ttfamily \#include $<$Email\+Sender.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classEmailSender_a3f11a5360b244cd559dc698e60d29492}{send\+Email}} (const QString \&to, const QString \&subject, const QString \&body)
+\begin{DoxyCompactList}\small\item\em Sends an email via Gmail’s SMTP server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functionality for sending emails via Gmail\textquotesingle{}s SMTP server. 
+
+The \mbox{\hyperlink{classEmailSender}{Email\+Sender}} class encapsulates the process of sending an email using Gmail\textquotesingle{}s SMTP server over a secure SSL connection. It uses credentials from environment variables to authenticate with the server and provides a static method to send an email. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEmailSender_a3f11a5360b244cd559dc698e60d29492}\label{classEmailSender_a3f11a5360b244cd559dc698e60d29492}} 
+\index{EmailSender@{EmailSender}!sendEmail@{sendEmail}}
+\index{sendEmail@{sendEmail}!EmailSender@{EmailSender}}
+\doxysubsubsection{\texorpdfstring{sendEmail()}{sendEmail()}}
+{\footnotesize\ttfamily bool Email\+Sender\+::send\+Email (\begin{DoxyParamCaption}\item[{const QString \&}]{to,  }\item[{const QString \&}]{subject,  }\item[{const QString \&}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends an email via Gmail’s SMTP server. 
+
+Sends an email using SMTP over an SSL connection.
+
+This static function sends an email by establishing an SSL connection to Gmail\textquotesingle{}s SMTP server. It reads the sender\textquotesingle{}s email address and application-\/specific password from environment variables, authenticates with the server, and sends an email with the provided recipient, subject, and body. It returns true if the email appears to have been sent successfully.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em to} & The recipient\textquotesingle{}s email address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em subject} & The subject of the email. \\
+\hline
+\mbox{\texttt{ in}}  & {\em body} & The body content of the email. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the email was sent successfully; false otherwise.
+\end{DoxyReturn}
+This function reads the sender\textquotesingle{}s email and application password from environment variables, establishes an SSL connection to Gmail\textquotesingle{}s SMTP server on port 465, and performs the necessary SMTP commands (EHLO, AUTH LOGIN, MAIL FROM, RCPT TO, DATA, QUIT) to send an email.
+
+A helper lambda function is used to send each SMTP command and log the corresponding responses.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em to} & The recipient\textquotesingle{}s email address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em subject} & The subject of the email. \\
+\hline
+\mbox{\texttt{ in}}  & {\em body} & The body content of the email. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the email was sent successfully; false if any step fails. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GUI/\mbox{\hyperlink{EmailSender_8h}{Email\+Sender.\+h}}\item 
+GUI/\mbox{\hyperlink{EmailSender_8cpp}{Email\+Sender.\+cpp}}\end{DoxyCompactItemize}
